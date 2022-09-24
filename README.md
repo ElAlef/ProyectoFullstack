@@ -7,7 +7,7 @@
 - Provide personalized reminders.
 - Suggest specialists by geographical proximity, among others.
 
-### It will also allow the page administrator to keep an orderly control of their services and patients.
+### It will also allow the web page administrator to keep an orderly control of their services and patients.
 
 # ProyectoFullstack
 
@@ -18,4 +18,4 @@
 - Brindar recordatorios personalizados.
 - Sugerir especialistas por cercanía geográfica, entre otros.
 
-### Además le permitira al administrador de la pagina llevar un control ordenado de sus servicios y pacientes. 
+### Además le permitira al administrador de la página web llevar un control ordenado de sus servicios y pacientes. 
