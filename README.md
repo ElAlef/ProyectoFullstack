@@ -18,4 +18,4 @@
 - Brindar recordatorios personalizados.
 - Sugerir especialistas por cercanía geográfica, entre otros.
 
-### Además le permitira al adiministrador de la pagina llevar un control ordenado de sus servicios y pacientes. 
+### Además le permitira al administrador de la pagina llevar un control ordenado de sus servicios y pacientes. 
