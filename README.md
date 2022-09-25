@@ -5,7 +5,8 @@
 ### This Site will serve for user self-management, from this page you can:
 - Book shift by specialty.
 - Provide personalized reminders.
-- Suggest specialists by geographical proximity, among others.
+- Suggest specialists by geographical proximity.
+- Suggest availability of days and times by specialist.
 
 ### It will also allow the web page administrator to keep an orderly control of their services and patients.
 
@@ -16,6 +17,7 @@
 ### Este Sitio servirá para la autogestión del usuario, desde esta página se podrá:  
 - Reservar turno por especialidad. 
 - Brindar recordatorios personalizados.
-- Sugerir especialistas por cercanía geográfica, entre otros.
+- Sugerir especialistas por cercanía geográfica.
+- Sugerir disponibilidad de días y horarios por especialista.
 
 ### Además le permitira al administrador de la página web llevar un control ordenado de sus servicios y pacientes. 
