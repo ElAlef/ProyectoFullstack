@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+
+body {
+  // background-color: rgb(0, 0, 0)
+}
+
+@import "./parciales/header";
+@import "./parciales/footer";
+@import "./parciales/index";
+@import "./parciales/nosotros";
+@import "./parciales/servicios";
+@import "./parciales/contactos";
+@import "./parciales/botones";
+@import "./parciales/media-queries";

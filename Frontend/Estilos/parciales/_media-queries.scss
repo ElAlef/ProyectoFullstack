@@ -1,0 +1,128 @@
+// MEDIA QUERIE
+
+// index
+
+@media only screen and (max-width: 850px) {
+  .heroSection__titulo {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .heroSection__titulo {
+    font-size: 2rem;
+    -webkit-text-stroke: darkorange 1px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .heroSection__titulo {
+    font-size: 1.5rem;
+    -webkit-text-stroke: darkorange 0.5px;
+  }
+}
+
+// nosotros
+
+@media only screen and (max-width: 1220px) {
+  .Nosotros__contenido,
+  .Servicios__contenido {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Nosotros__img,
+  .historia__img {
+    height: 12.75rem;
+  }
+  .Servicios__img {
+    height: 12rem;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .Nosotros__img,
+  .historia__img {
+    height: 9.75rem;
+  }
+  .Servicios__img {
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Nosotros__titulo,
+  .Servicios__titulo {
+    font-size: 2rem;
+    -webkit-text-stroke: darkorange 1px;
+  }
+  .NuestrosServicios__encabezado {
+    font-size: 2rem;
+    -webkit-text-stroke: rgb(251, 255, 0) 1px;
+  }
+
+  .Equipo {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Equipo__titulo {
+    font-size: 3rem;
+  }
+}
+// contactos
+
+@media only screen and (max-width: 700px) {
+  .contactos__titulo {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .contactos__titulo {
+    font-size: 2rem;
+    -webkit-text-stroke: rgb(255, 140, 0) 1px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contactos__titulo {
+    font-size: 1.5rem;
+    -webkit-text-stroke: rgb(255, 140, 0) 1px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contactos__img {
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .contactos__img {
+    width: 12rem;
+  }
+
+  .ubicacion__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .mapa {
+    width: 320px;
+    height: 500px;
+  }
+}
+
+// footer
+
+@media only screen and (max-width: 600px) {
+  .footer__contenido {
+    display: flex;
+    flex-direction: column;
+  }
+}

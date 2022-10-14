@@ -1,0 +1,31 @@
+.NuestrosServicios {
+  &__encabezado {
+    color: rgb(0, 128, 255);
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    animation-name: aparecer;
+    animation-duration: 4s;
+  }
+
+  &__cards {
+    background: rgb(82, 113, 227);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 106, 255, 0.986) 80%,
+      rgb(114, 179, 228) 100%
+    );
+    width: 18rem;
+  }
+
+  &__titulo {
+    color: rgb(141, 202, 242);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  &__parrafo {
+    color: rgb(255, 249, 249);
+  }
+}

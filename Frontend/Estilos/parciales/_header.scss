@@ -1,0 +1,49 @@
+.header {
+  &__nav {
+    // background-image: linear-gradient(rgb(134, 130, 124), rgb(0, 0, 0), rgb(0, 0, 0));
+    background-color: rgb(99, 99, 186);
+  }
+
+  &__logo {
+    color: white;
+    font-size: 3rem;
+    margin-right: 8rem;
+  }
+
+  &__menuHamburguesa {
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+  }
+
+  &__ul {
+    margin-top: 1rem;
+  }
+
+  &__items {
+    margin-right: 1rem;
+  }
+
+  &__items:hover {
+    transition: 1s;
+    text-decoration: underline;
+    font-size: 1.3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    &--activo {
+      color: rgb(20, 224, 255);
+      font-size: 1.3rem;
+    }
+  }
+
+  &__link:hover {
+    color: rgb(0, 213, 255);
+    transition: 1s;
+    text-decoration: underline;
+    font-size: 1.3rem;
+  }
+}

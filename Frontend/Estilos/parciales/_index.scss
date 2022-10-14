@@ -1,0 +1,98 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/Index/Fondo-Medico1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 120vh;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+
+  &__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__titulo {
+    // color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    margin-bottom: 5px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    // -webkit-text-stroke: darkorange 2px;
+    -webkit-text-stroke: rgb(0, 0, 248) 2px;
+    animation-name: aparecer;
+    animation-duration: 4s;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__parrafo {
+    text-align: center;
+    color: rgb(10, 216, 239);
+    background-color: rgba(0, 0, 0, 0.438);
+    font-size: 1.5rem;
+  }
+
+  &__boton {
+    background-color: rgb(48, 170, 214);
+    border-radius: 12px;
+    transition: background-color 1s;
+  }
+
+  &__boton:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+  &__aboton {
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    transition: color 1s;
+    text-decoration: none;
+  }
+
+  &__aboton:hover {
+    color: rgb(11, 232, 244);
+  }
+}
+
+.Beneficios {
+  &__cards {
+    background-color: rgb(99, 99, 186);
+    padding: 18px;
+    border-radius: 1.5rem;
+  }
+
+  &__cardsTitle {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &__cardsText {
+    color: rgb(12, 231, 230);
+    text-align: center;
+  }
+
+  &__img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
