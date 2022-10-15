@@ -1,32 +1,30 @@
 .heroSection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // flex-direction: column;
+  // align-items: initial;
+  // justify-content: center;
   background-image: url(../assets/Index/Fondo-Medico1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  height: 120vh;
-  padding-bottom: 2rem;
-  padding-top: 3rem;
+  background-position: center;
+  height: 80vh;
+  padding: 3rem;
 
   &__banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
   }
 
   &__titulo {
     // color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-size: 4rem;
-    margin-bottom: 5px;
+    color: rgb(96, 98, 231);
+    font-size: 6rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-align: center;
     // -webkit-text-stroke: darkorange 2px;
-    -webkit-text-stroke: rgb(0, 0, 248) 2px;
+    -webkit-text-stroke: rgb(255, 255, 255) 1px;
     animation-name: aparecer;
     animation-duration: 4s;
   }
@@ -44,49 +42,36 @@
     text-align: center;
     color: rgb(10, 216, 239);
     background-color: rgba(0, 0, 0, 0.438);
-    font-size: 1.5rem;
-  }
-
-  &__boton {
-    background-color: rgb(48, 170, 214);
-    border-radius: 12px;
-    transition: background-color 1s;
-  }
-
-  &__boton:hover {
-    background-color: rgb(255, 255, 255);
-  }
-
-  &__aboton {
-    color: rgb(255, 255, 255);
-    padding: 8px 15px;
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    transition: color 1s;
-    text-decoration: none;
-  }
-
-  &__aboton:hover {
-    color: rgb(11, 232, 244);
+    font-size: 1rem;
+    border-radius: 30px;
   }
 }
 
 .Beneficios {
+  padding: 10px;
   &__cards {
-    background-color: rgb(99, 99, 186);
+    background: linear-gradient(
+      180deg,
+      rgb(142, 140, 152) 80%,
+      rgb(99, 99, 186) 100%
+    );
     padding: 18px;
-    border-radius: 1.5rem;
+    border-radius: 15px;
+    align-items: center;
   }
 
   &__cardsTitle {
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    color: rgb(57, 68, 170);
+    // color: rgb(255, 255, 255);
+    font-size: 1rem;
     text-align: center;
   }
 
   &__cardsText {
-    color: rgb(12, 231, 230);
+    color: rgb(255, 255, 255);
+    // color: rgb(0, 255, 255);
     text-align: center;
+    font-size: 0.8rem;
   }
 
   &__img {

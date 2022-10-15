@@ -2,7 +2,7 @@
   margin-top: 5rem;
   &__titulo {
     color: rgb(255, 255, 255);
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 6px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     -webkit-text-stroke: rgb(0, 8, 255) 2.5px;
@@ -22,15 +22,15 @@
 }
 
 .contUbicacion {
-  background-color: rgb(167, 166, 166);
+  background-color: rgb(163, 154, 154);
   margin-top: 4rem;
   padding-top: 2rem;
 }
 
 .ubicacion {
   &__titulo {
-    color: rgb(0, 204, 255);
-    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
     letter-spacing: 2px;
   }
 }
@@ -41,6 +41,8 @@
 
 .LogosUbicacion {
   &__parrafo {
-    color: rgb(3, 247, 255);
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
   }
 }

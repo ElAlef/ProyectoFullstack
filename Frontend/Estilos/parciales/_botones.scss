@@ -1,24 +1,24 @@
 .boton {
-  background-color: rgb(0, 81, 255);
+  background-color: rgba(255, 255, 255, 0.626);
   border-radius: 12px;
   transition: background-color 1s;
 }
 
 .boton:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 81, 255);
 }
 
 .aboton {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 81, 255);
   padding: 8px 15px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   transition: color 1s;
   text-decoration: none;
 }
 
 .aboton:hover {
-  color: rgb(0, 81, 255);
+  color: rgb(255, 255, 255);
 }
 
 .boton__form {

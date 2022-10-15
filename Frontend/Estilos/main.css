@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header__nav {
@@ -12,8 +12,9 @@
 
 .header__logo {
   color: white;
-  font-size: 3rem;
-  margin-right: 8rem;
+  font-size: 2rem;
+  margin-left: 4rem;
+  padding-top: 1rem;
 }
 
 .header__menuHamburguesa {
@@ -33,19 +34,19 @@
   -webkit-transition: 1s;
   transition: 1s;
   text-decoration: underline;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .header__link {
   text-decoration: none;
   color: white;
   margin-right: 1rem;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 .header__link--activo {
   color: #14e0ff;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .header__link:hover {
@@ -53,7 +54,7 @@
   -webkit-transition: 1s;
   transition: 1s;
   text-decoration: underline;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .footer {
@@ -76,48 +77,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-image: url(../assets/Index/Fondo-Medico1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  height: 120vh;
-  padding-bottom: 2rem;
-  padding-top: 3rem;
-}
-
-.heroSection__banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-position: center;
+  height: 80vh;
+  padding: 3rem;
 }
 
 .heroSection__titulo {
-  color: white;
-  font-size: 4rem;
-  margin-bottom: 5px;
+  color: #6062e7;
+  font-size: 6rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
-  -webkit-text-stroke: #0000f8 2px;
+  -webkit-text-stroke: white 1px;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   -webkit-animation-duration: 4s;
@@ -146,49 +119,34 @@
   text-align: center;
   color: #0ad8ef;
   background-color: rgba(0, 0, 0, 0.438);
-  font-size: 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
 }
 
-.heroSection__boton {
-  background-color: #30aad6;
-  border-radius: 12px;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
-}
-
-.heroSection__boton:hover {
-  background-color: white;
-}
-
-.heroSection__aboton {
-  color: white;
-  padding: 8px 15px;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-  text-decoration: none;
-}
-
-.heroSection__aboton:hover {
-  color: #0be8f4;
+.Beneficios {
+  padding: 10px;
 }
 
 .Beneficios__cards {
-  background-color: #6363ba;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #8e8c98), to(#6363ba));
+  background: linear-gradient(180deg, #8e8c98 80%, #6363ba 100%);
   padding: 18px;
-  border-radius: 1.5rem;
+  border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Beneficios__cardsTitle {
-  color: white;
-  font-size: 1.5rem;
+  color: #3944aa;
+  font-size: 1rem;
   text-align: center;
 }
 
 .Beneficios__cardsText {
-  color: #0ce7e6;
+  color: white;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .Beneficios__img {
@@ -210,12 +168,11 @@
 }
 
 .Nosotros__titulo {
-  color: white;
-  font-size: 4rem;
+  color: #0051ff;
+  font-size: 2rem;
   letter-spacing: 5px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
-  -webkit-text-stroke: #0051ff 2.5px;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   -webkit-animation-duration: 4s;
@@ -238,7 +195,7 @@
 }
 
 .Nosotros__parrafo {
-  color: #2f00ff;
+  color: black;
 }
 
 .Nosotros__img {
@@ -247,7 +204,8 @@
 
 .historia {
   margin-bottom: 5rem;
-  background-color: #e2fefd;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #b8b7be), to(#6363ba));
+  background: linear-gradient(180deg, #b8b7be 80%, #6363ba 100%);
   padding: 2rem;
   display: inline-block;
   -webkit-box-align: center;
@@ -256,8 +214,8 @@
 }
 
 .historia__titulo {
-  color: #0040ff;
-  font-size: 2.5rem;
+  color: #f8f3f3;
+  font-size: 2rem;
   letter-spacing: 5px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
@@ -277,7 +235,7 @@
 }
 
 .historia__parrafo {
-  color: black;
+  color: #3944aa;
 }
 
 .historia .historia__ContenedorImg {
@@ -297,7 +255,7 @@
 
 .NuestrosServicios__encabezado {
   color: #0080ff;
-  font-size: 4rem;
+  font-size: 2rem;
   letter-spacing: 5px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
@@ -305,6 +263,8 @@
           animation-name: aparecer;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 .NuestrosServicios__cards {
@@ -312,6 +272,7 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(0, 106, 255, 0.986)), to(#72b3e4));
   background: linear-gradient(180deg, rgba(0, 106, 255, 0.986) 80%, #72b3e4 100%);
   width: 18rem;
+  padding: 10px;
 }
 
 .NuestrosServicios__titulo {
@@ -330,7 +291,7 @@
 
 .contactos__titulo {
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 6px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   -webkit-text-stroke: #0008ff 2.5px;
@@ -351,14 +312,14 @@
 }
 
 .contUbicacion {
-  background-color: #a7a6a6;
+  background-color: #a39a9a;
   margin-top: 4rem;
   padding-top: 2rem;
 }
 
 .ubicacion__titulo {
-  color: #00ccff;
-  font-size: 4rem;
+  color: white;
+  font-size: 3rem;
   letter-spacing: 2px;
 }
 
@@ -367,24 +328,26 @@
 }
 
 .LogosUbicacion__parrafo {
-  color: #03f7ff;
+  color: white;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
 }
 
 .boton {
-  background-color: #0051ff;
+  background-color: rgba(255, 255, 255, 0.626);
   border-radius: 12px;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
 
 .boton:hover {
-  background-color: white;
+  background-color: #0051ff;
 }
 
 .aboton {
-  color: white;
+  color: #0051ff;
   padding: 8px 15px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   -webkit-transition: color 1s;
   transition: color 1s;
@@ -392,7 +355,7 @@
 }
 
 .aboton:hover {
-  color: #0051ff;
+  color: white;
 }
 
 .boton__form {
@@ -420,23 +383,22 @@
   color: #0051ff;
 }
 
-@media only screen and (max-width: 850px) {
-  .heroSection__titulo {
-    font-size: 3rem;
+@media only screen and (max-width: 700px) {
+  .header__logo {
+    margin-left: 1rem;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .heroSection__titulo {
-    font-size: 2rem;
-    -webkit-text-stroke: darkorange 1px;
+@media only screen and (max-width: 405px) {
+  .header__logo {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 405px) {
   .heroSection__titulo {
-    font-size: 1.5rem;
-    -webkit-text-stroke: darkorange 0.5px;
+    font-size: 4rem;
   }
 }
 
@@ -477,11 +439,9 @@
   .Nosotros__titulo,
   .Servicios__titulo {
     font-size: 2rem;
-    -webkit-text-stroke: darkorange 1px;
   }
   .NuestrosServicios__encabezado {
     font-size: 2rem;
-    -webkit-text-stroke: #fbff00 1px;
   }
   .Equipo {
     border: none;
@@ -493,29 +453,18 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .contactos__titulo {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and (max-width: 560px) {
-  .contactos__titulo {
-    font-size: 2rem;
-    -webkit-text-stroke: darkorange 1px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .contactos__titulo {
-    font-size: 1.5rem;
-    -webkit-text-stroke: darkorange 1px;
-  }
-}
-
 @media only screen and (max-width: 450px) {
   .contactos__img {
     width: 15rem;
+  }
+  .ubicacion__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .contactos__titulo {
+    font-size: 2.5rem;
   }
 }
 
@@ -523,8 +472,11 @@
   .contactos__img {
     width: 12rem;
   }
+  .contactos__titulo {
+    font-size: 2rem;
+  }
   .ubicacion__titulo {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

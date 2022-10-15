@@ -3,12 +3,12 @@
   flex-direction: row;
 
   &__titulo {
-    color: rgb(255, 255, 255);
-    font-size: 4rem;
+    color: rgb(0, 81, 255);
+    font-size: 2rem;
     letter-spacing: 5px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-align: center;
-    -webkit-text-stroke: rgb(0, 81, 255) 2.5px;
+    // -webkit-text-stroke: rgb(0, 81, 255) 2.5px;
     animation-name: aparecer;
     animation-duration: 4s;
   }
@@ -27,7 +27,7 @@
   }
 
   &__parrafo {
-    color: rgb(47, 0, 255);
+    color: rgb(0, 0, 0);
   }
 
   &__img {
@@ -37,13 +37,17 @@
 
 .historia {
   margin-bottom: 5rem;
-  background-color: rgb(226, 254, 253);
+  background: linear-gradient(
+    180deg,
+    rgb(184, 183, 190) 80%,
+    rgb(99, 99, 186) 100%
+  );
   padding: 2rem;
   display: inline-block;
   align-items: center;
   &__titulo {
-    color: rgb(0, 64, 255);
-    font-size: 2.5rem;
+    color: rgb(248, 243, 243);
+    font-size: 2rem;
     letter-spacing: 5px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-align: center;
@@ -61,7 +65,7 @@
   }
 
   &__parrafo {
-    color: rgb(0, 0, 0);
+    color: rgb(57, 68, 170);
   }
 
   .historia__ContenedorImg {
