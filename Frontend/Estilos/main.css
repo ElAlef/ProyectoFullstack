@@ -6,6 +6,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.header__contNav {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .header__nav {
   background-color: #6363ba;
 }
@@ -41,12 +47,12 @@
   text-decoration: none;
   color: white;
   margin-right: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .header__link--activo {
   color: #14e0ff;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .header__link:hover {
@@ -54,7 +60,42 @@
   -webkit-transition: 1s;
   transition: 1s;
   text-decoration: underline;
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+
+.header__contenedorBotones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__boton {
+  background-color: #5684e9;
+  border-radius: 12px;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.header__boton:hover {
+  background-color: white;
+}
+
+.header__aboton {
+  color: white;
+  padding: 8px 15px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  text-decoration: none;
+}
+
+.header__aboton:hover {
+  color: #0008ff;
 }
 
 .footer {
@@ -269,8 +310,8 @@
 
 .NuestrosServicios__cards {
   background: #5271e3;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(0, 106, 255, 0.986)), to(#72b3e4));
-  background: linear-gradient(180deg, rgba(0, 106, 255, 0.986) 80%, #72b3e4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(131, 134, 139, 0.986)), to(#72b3e4));
+  background: linear-gradient(180deg, rgba(131, 134, 139, 0.986) 80%, #72b3e4 100%);
   width: 18rem;
   padding: 10px;
 }
@@ -331,6 +372,89 @@
   color: white;
   font-size: 0.7rem;
   margin-top: 0.5rem;
+}
+
+.ingresar {
+  background-image: url(../assets/ingresar/ingresar.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.ingresar__title {
+  text-align: center;
+  color: #2a3deb;
+  font-size: 40px;
+}
+
+.ingresar__form {
+  background-color: white;
+  margin-top: 150px;
+  padding: 3px;
+}
+
+.ingresar__contenedorForm {
+  width: 100%;
+  padding: 15px;
+}
+
+.ingresar input[type="text"],
+.ingresar input[type="email"],
+.ingresar input[type="password"] {
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+}
+
+.ingresar__contenedorInput {
+  margin-bottom: 15px;
+  border: 1px solid #2a3deb;
+}
+
+.ingresar__icon {
+  min-width: 50px;
+  text-align: center;
+  color: #999;
+}
+
+.ingresar__boton {
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  color: #2a3deb;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ingresar__boton:hover {
+  background-color: #646eca;
+  color: white;
+}
+
+.ingresar__p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.ingresar__link {
+  text-decoration: none;
+  color: #2a3deb;
+  font-weight: 600;
+}
+
+.ingresar__link:hover {
+  color: #6b75ca;
+}
+
+@media (min-width: 768px) {
+  .ingresar__form {
+    margin: auto;
+    width: 500px;
+    margin-top: 100px;
+    border-radius: 2%;
+  }
 }
 
 .boton {
@@ -442,14 +566,6 @@
   }
   .NuestrosServicios__encabezado {
     font-size: 2rem;
-  }
-  .Equipo {
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
-  .Equipo__titulo {
-    font-size: 3rem;
   }
 }
 

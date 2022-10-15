@@ -1,8 +1,5 @@
 .heroSection {
   display: flex;
-  // flex-direction: column;
-  // align-items: initial;
-  // justify-content: center;
   background-image: url(../assets/Index/Fondo-Medico1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,20 +7,11 @@
   height: 80vh;
   padding: 3rem;
 
-  &__banner {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-  }
-
   &__titulo {
-    // color: rgb(0, 0, 0);
     color: rgb(96, 98, 231);
     font-size: 6rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-align: center;
-    // -webkit-text-stroke: darkorange 2px;
     -webkit-text-stroke: rgb(255, 255, 255) 1px;
     animation-name: aparecer;
     animation-duration: 4s;
