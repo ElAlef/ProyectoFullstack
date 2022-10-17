@@ -47,7 +47,8 @@
   text-decoration: none;
   color: white;
   margin-right: 1rem;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
+
 }
 
 .header__link--activo {
@@ -457,30 +458,7 @@
   }
 }
 
-.boton {
-  background-color: rgba(255, 255, 255, 0.626);
-  border-radius: 12px;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
-}
 
-.boton:hover {
-  background-color: #0051ff;
-}
-
-.aboton {
-  color: #0051ff;
-  padding: 8px 15px;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-  text-decoration: none;
-}
-
-.aboton:hover {
-  color: white;
-}
 
 .boton__form {
   background-color: #0051ff;
