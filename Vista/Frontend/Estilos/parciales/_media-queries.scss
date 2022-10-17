@@ -1,0 +1,110 @@
+// MEDIA QUERIE
+
+// header
+
+@media only screen and (max-width: 700px) {
+  .header__logo {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .header__logo {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+  }
+}
+
+// index
+
+@media only screen and (max-width: 405px) {
+  .heroSection__titulo {
+    font-size: 4rem;
+  }
+}
+
+// nosotros
+
+@media only screen and (max-width: 1220px) {
+  .Nosotros__contenido,
+  .Servicios__contenido {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Nosotros__img,
+  .historia__img {
+    height: 12.75rem;
+  }
+  .Servicios__img {
+    height: 12rem;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .Nosotros__img,
+  .historia__img {
+    height: 9.75rem;
+  }
+  .Servicios__img {
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Nosotros__titulo,
+  .Servicios__titulo {
+    font-size: 2rem;
+  }
+  .NuestrosServicios__encabezado {
+    font-size: 2rem;
+  }
+}
+// contactos
+
+@media only screen and (max-width: 450px) {
+  .contactos__img {
+    width: 15rem;
+  }
+  .ubicacion__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .contactos__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .contactos__img {
+    width: 12rem;
+  }
+
+  .contactos__titulo {
+    font-size: 2rem;
+  }
+
+  .ubicacion__titulo {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .mapa {
+    width: 320px;
+    height: 500px;
+  }
+}
+
+// footer
+
+@media only screen and (max-width: 600px) {
+  .footer__contenido {
+    display: flex;
+    flex-direction: column;
+  }
+}

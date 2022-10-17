@@ -1,0 +1,71 @@
+.heroSection {
+  display: flex;
+  background-image: url(../assets/Index/Fondo-Medico1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  padding: 3rem;
+
+  &__titulo {
+    color: rgb(96, 98, 231);
+    font-size: 6rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    -webkit-text-stroke: rgb(255, 255, 255) 1px;
+    animation-name: aparecer;
+    animation-duration: 4s;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__parrafo {
+    text-align: center;
+    color: rgb(10, 216, 239);
+    background-color: rgba(0, 0, 0, 0.438);
+    font-size: 1rem;
+    border-radius: 30px;
+  }
+}
+
+.Beneficios {
+  padding: 10px;
+  &__cards {
+    background: linear-gradient(
+      180deg,
+      rgb(142, 140, 152) 80%,
+      rgb(99, 99, 186) 100%
+    );
+    padding: 18px;
+    border-radius: 15px;
+    align-items: center;
+  }
+
+  &__cardsTitle {
+    color: rgb(57, 68, 170);
+    // color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  &__cardsText {
+    color: rgb(255, 255, 255);
+    // color: rgb(0, 255, 255);
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  &__img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
