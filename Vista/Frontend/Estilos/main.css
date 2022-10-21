@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'open sans' , sans-serif;
 }
 
 .header__contNav {
@@ -13,7 +13,7 @@
 }
 
 .header__nav {
-  background-color: #6363ba;
+  background-color: #61d1a0;
 }
 
 .header__logo {
@@ -23,8 +23,12 @@
   padding-top: 1rem;
 }
 
+.header__logo img{
+  height: 70px;
+}
+
 .header__menuHamburguesa {
-  background-color: white;
+  background-color: #61d1a0;
   padding: 3px;
 }
 
@@ -45,23 +49,22 @@
 
 .header__link {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-right: 1rem;
   font-size: 1.2rem;
-
 }
 
 .header__link--activo {
-  color: #14e0ff;
-  font-size: 0.8rem;
+  color: #014836;
+  font-size: 1.3rem;
 }
 
 .header__link:hover {
-  color: #00d5ff;
-  -webkit-transition: 1s;
-  transition: 1s;
+  color: #014836;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   text-decoration: underline;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
 }
 
 .header__contenedorBotones {
@@ -75,32 +78,32 @@
 }
 
 .header__boton {
-  background-color: #5684e9;
+  background-color: #014836;
   border-radius: 12px;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .header__boton:hover {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .header__aboton {
-  color: white;
+  color: #ffffff;
   padding: 8px 15px;
-  font-size: 0.7rem;
+  font-size: 1rem;
   letter-spacing: 2px;
-  -webkit-transition: color 1s;
-  transition: color 1s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
   text-decoration: none;
 }
 
 .header__aboton:hover {
-  color: #0008ff;
+  color: #014836;
 }
 
 .footer {
-  background-color: #6363ba;
+  background-color: #61d1a0;
 }
 
 .footer__contenido {
@@ -111,7 +114,7 @@
 
 .footer__copy {
   text-align: center;
-  color: #cfc6c6;
+  color: #014836;
   letter-spacing: 1px;
 }
 
@@ -128,15 +131,19 @@
 }
 
 .heroSection__titulo {
-  color: #6062e7;
+  color: #014836;
   font-size: 6rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Open sans", sans-serif;
   text-align: center;
-  -webkit-text-stroke: white 1px;
+  -webkit-text-stroke: #29292b 1.5px;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+}
+
+.heroSection__titulo img {
+  height: 220px;
 }
 
 @-webkit-keyframes aparecer {
@@ -159,8 +166,8 @@
 
 .heroSection__parrafo {
   text-align: center;
-  color: #0ad8ef;
-  background-color: rgba(0, 0, 0, 0.438);
+  color: #61d1a0;
+  background-color: #00000070;
   font-size: 1rem;
   border-radius: 30px;
 }
@@ -170,8 +177,8 @@
 }
 
 .Beneficios__cards {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #8e8c98), to(#6363ba));
-  background: linear-gradient(180deg, #8e8c98 80%, #6363ba 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #29292b), to(#014836));
+  background: linear-gradient(180deg, #29292b 60%, #014836 120%);
   padding: 18px;
   border-radius: 15px;
   -webkit-box-align: center;
@@ -180,13 +187,13 @@
 }
 
 .Beneficios__cardsTitle {
-  color: #3944aa;
+  color: #61d1a0;
   font-size: 1rem;
   text-align: center;
 }
 
 .Beneficios__cardsText {
-  color: white;
+  color: #ffffff;
   text-align: center;
   font-size: 0.8rem;
 }
@@ -210,10 +217,10 @@
 }
 
 .Nosotros__titulo {
-  color: #0051ff;
+  color: #61d1a0;
   font-size: 2rem;
   letter-spacing: 5px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Open sans", sans-serif;
   text-align: center;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
@@ -237,7 +244,7 @@
 }
 
 .Nosotros__parrafo {
-  color: black;
+  color: #000000;
 }
 
 .Nosotros__img {
@@ -246,8 +253,8 @@
 
 .historia {
   margin-bottom: 5rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #b8b7be), to(#6363ba));
-  background: linear-gradient(180deg, #b8b7be 80%, #6363ba 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #29292b), to(#014836));
+  background: linear-gradient(180deg, #29292b 80%, #014836 100%);
   padding: 2rem;
   display: inline-block;
   -webkit-box-align: center;
@@ -259,7 +266,7 @@
   color: #f8f3f3;
   font-size: 2rem;
   letter-spacing: 5px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "open sans", sans-serif;
   text-align: center;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
@@ -277,7 +284,7 @@
 }
 
 .historia__parrafo {
-  color: #3944aa;
+  color: #61d1a0;
 }
 
 .historia .historia__ContenedorImg {
@@ -293,13 +300,14 @@
 .historia__img {
   width: 100%;
   margin: auto;
+  border-radius: 15px;
 }
 
 .NuestrosServicios__encabezado {
-  color: #0080ff;
+  color: #61d1a0;
   font-size: 2rem;
   letter-spacing: 5px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: impact, 'open sans';
   text-align: center;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
@@ -310,15 +318,15 @@
 }
 
 .NuestrosServicios__cards {
-  background: #5271e3;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(131, 134, 139, 0.986)), to(#72b3e4));
-  background: linear-gradient(180deg, rgba(131, 134, 139, 0.986) 80%, #72b3e4 100%);
+  background: #61d1a0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #29292b), to(#014836));
+  background: linear-gradient(180deg, #29292b 80%, #61d1a0 140%);
   width: 18rem;
   padding: 10px;
 }
 
 .NuestrosServicios__titulo {
-  color: #8dcaf2;
+  color: #61d1a0;
   font-size: 1.8rem;
   letter-spacing: 1px;
 }
@@ -335,12 +343,12 @@
   color: white;
   font-size: 3rem;
   letter-spacing: 6px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  -webkit-text-stroke: #0008ff 2.5px;
+  font-family: Impact, Haettenschweiler, "open sans", sans-serif;
+  -webkit-text-stroke: #61d1a0 2.5px;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .contactos__img {
@@ -349,18 +357,19 @@
 }
 
 .contactos__form {
-  color: #0040ff;
+  color: #61d1a0;
   letter-spacing: 1px;
 }
 
 .contUbicacion {
-  background-color: #a39a9a;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #29292b), to(100% #014836));
+  background: linear-gradient(180deg, #29292b 60%, #61d1a0 120%);
   margin-top: 4rem;
   padding-top: 2rem;
 }
 
 .ubicacion__titulo {
-  color: white;
+  color: #ffffff;
   font-size: 3rem;
   letter-spacing: 2px;
 }
@@ -384,12 +393,12 @@
 
 .ingresar__title {
   text-align: center;
-  color: #2a3deb;
+  color: #61d1a0;
   font-size: 40px;
 }
 
 .ingresar__form {
-  background-color: white;
+  background-color: #29292b;
   margin-top: 150px;
   padding: 3px;
 }
@@ -406,11 +415,12 @@
   width: 82%;
   padding: 10px;
   border: none;
+  background-color: #29292b;
 }
 
 .ingresar__contenedorInput {
   margin-bottom: 15px;
-  border: 1px solid #2a3deb;
+  border: 1px solid #61d1a0;
 }
 
 .ingresar__icon {
@@ -423,30 +433,32 @@
   border: none;
   width: 100%;
   font-size: 20px;
-  color: #2a3deb;
+  color: #ffffff;
+  background-color: #61d1a0;
   padding: 15px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .ingresar__boton:hover {
-  background-color: #646eca;
-  color: white;
+  background-color: #014836;
+  color: #ffffff;
 }
 
 .ingresar__p {
   text-align: center;
   font-size: 0.8rem;
+  color: #ffffff;
 }
 
 .ingresar__link {
   text-decoration: none;
-  color: #2a3deb;
+  color: #61d1a0;
   font-weight: 600;
 }
 
 .ingresar__link:hover {
-  color: #6b75ca;
+  color: #61d1a0;
 }
 
 @media (min-width: 768px) {
@@ -458,21 +470,48 @@
   }
 }
 
+.boton {
+  background-color: #014836;
+  border-radius: 12px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
 
+.boton:hover {
+  background-color: #ffffff;
+}
+
+.aboton {
+  color: #ffffff;
+  padding: 8px 15px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  text-decoration: none;
+}
+
+.aboton:hover {
+  color: #014836;
+}
 
 .boton__form {
-  background-color: #0051ff;
+  background-color: #014836;
   border-radius: 12px;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
 
 .boton__form:hover {
-  background-color: white;
+  background-color: #61d1a0;
+}
+
+.Nosotros__img{
+  border-radius: 12px;
 }
 
 .aboton__form {
-  color: white;
+  color: #ffffff;
   padding: 1px 8px;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -482,7 +521,7 @@
 }
 
 .aboton__form:hover {
-  color: #0051ff;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 700px) {
