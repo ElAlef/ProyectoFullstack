@@ -1,0 +1,82 @@
+.header {
+  &__contNav {
+    align-items: baseline;
+  }
+
+  &__nav {
+    background-color: rgb(99, 99, 186);
+  }
+
+  &__logo {
+    color: white;
+    font-size: 2rem;
+    margin-left: 4rem;
+    padding-top: 1rem;
+  }
+
+  &__menuHamburguesa {
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+  }
+
+  &__ul {
+    margin-top: 1rem;
+  }
+
+  &__items {
+    margin-right: 1rem;
+  }
+
+  &__items:hover {
+    transition: 1s;
+    text-decoration: underline;
+    font-size: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 1rem;
+    font-size: 0.7rem;
+    &--activo {
+      color: rgb(20, 224, 255);
+      font-size: 0.8rem;
+    }
+  }
+
+  &__link:hover {
+    color: rgb(0, 213, 255);
+    transition: 1s;
+    text-decoration: underline;
+    font-size: 0.8rem;
+  }
+
+  &__contenedorBotones {
+    // background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__boton {
+    background-color: rgb(86, 132, 233);
+    border-radius: 12px;
+    transition: background-color 1s;
+  }
+
+  &__boton:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+  &__aboton {
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    transition: color 1s;
+    text-decoration: none;
+  }
+
+  &__aboton:hover {
+    color: rgb(0, 8, 255);
+  }
+}

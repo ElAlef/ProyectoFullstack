@@ -1,0 +1,81 @@
+.Nosotros {
+  display: flex;
+  flex-direction: row;
+
+  &__titulo {
+    color: rgb(0, 81, 255);
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    // -webkit-text-stroke: rgb(0, 81, 255) 2.5px;
+    animation-name: aparecer;
+    animation-duration: 4s;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__contenido {
+    align-items: center;
+  }
+
+  &__parrafo {
+    color: rgb(0, 0, 0);
+  }
+
+  &__img {
+    height: 18.75rem;
+  }
+}
+
+.historia {
+  margin-bottom: 5rem;
+  background: linear-gradient(
+    180deg,
+    rgb(184, 183, 190) 80%,
+    rgb(99, 99, 186) 100%
+  );
+  padding: 2rem;
+  display: inline-block;
+  align-items: center;
+  &__titulo {
+    color: rgb(248, 243, 243);
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    animation-name: aparecer;
+    animation-duration: 4s;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__parrafo {
+    color: rgb(57, 68, 170);
+  }
+
+  .historia__ContenedorImg {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    margin: auto;
+  }
+}
