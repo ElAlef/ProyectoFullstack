@@ -1,0 +1,45 @@
+.boton {
+  background-color: rgba(255, 255, 255, 0.626);
+  border-radius: 12px;
+  transition: background-color 1s;
+}
+
+.boton:hover {
+  background-color: rgb(0, 81, 255);
+}
+
+.aboton {
+  color: rgb(0, 81, 255);
+  padding: 8px 15px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  transition: color 1s;
+  text-decoration: none;
+}
+
+.aboton:hover {
+  color: rgb(255, 255, 255);
+}
+
+.boton__form {
+  background-color: rgb(0, 81, 255);
+  border-radius: 12px;
+  transition: background-color 1s;
+}
+
+.boton__form:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.aboton__form {
+  color: rgb(255, 255, 255);
+  padding: 1px 8px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  transition: color 1s;
+  text-decoration: none;
+}
+
+.aboton__form:hover {
+  color: rgb(0, 81, 255);
+}
