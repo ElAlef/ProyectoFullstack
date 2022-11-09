@@ -1,0 +1,85 @@
+// Estos son los estilos de los formularios de login y de registro
+
+.ingresar {
+  background-image: url(../assets/ingresar/ingresar.jpg);
+  //   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  &__title {
+    text-align: center;
+    color: rgb(42, 61, 235);
+    font-size: 40px;
+  }
+
+  &__form {
+    background-color: rgb(255, 255, 255);
+    margin-top: 150px;
+    padding: 3px;
+  }
+
+  &__contenedorForm {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+  }
+
+  &__contenedorInput {
+    margin-bottom: 15px;
+    border: 1px solid rgb(42, 61, 235);
+  }
+
+  &__icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+  }
+
+  &__boton {
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(42, 61, 235);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__boton:hover {
+    background-color: rgb(100, 110, 202);
+    color: white;
+  }
+
+  &__p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgb(42, 61, 235);
+    font-weight: 600;
+  }
+
+  &__link:hover {
+    color: rgb(107, 117, 202);
+  }
+}
+
+@media (min-width: 768px) {
+  .ingresar__form {
+    margin: auto;
+    width: 500px;
+    margin-top: 100px;
+    border-radius: 2%;
+  }
+}
