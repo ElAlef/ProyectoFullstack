@@ -1,0 +1,55 @@
+.fondo{
+    
+  background-image: url(foto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 30%;
+  
+}
+
+
+.nav-enlace{
+    background:#5F9DF7;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.nav-enlace:hover{
+    background:#628E90 ;
+}
+nav{
+    background:gray ;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-boton{
+    background: rgba(0, 0, 255, 0.753);
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+}
+@media (max-width: 600px) {
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+
+    .nav-enlace{
+        margin: 10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+    .fondo{
+        width: 100%
+        ;
+    }
+    }
