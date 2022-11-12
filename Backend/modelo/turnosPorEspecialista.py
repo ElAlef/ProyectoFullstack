@@ -1,13 +1,11 @@
-import Especialista
-import ReservaDeTurno
-class TurnosPorEspecialista(Especialista):
-    atencion = ReservaDeTurno()
-    def __init__(self, fecha, horaDesde, horaHasta, atencion):
+
+class TurnosPorEspecialista():
+
+    def __init__(self, fecha, horaDesde, horaHasta):
         self.Fecha = fecha
         self.HoraDesde = horaDesde
         self.HoraHasta = horaHasta
-        self.Atencion = atencion
-
+      
     def get_Fecha(self):
         return self.Fecha
 
@@ -25,9 +23,9 @@ class TurnosPorEspecialista(Especialista):
 
     def set_HoraHasta(self, horaHasta):
         self.HoraHasta = horaHasta
+    
+    
+    def __str__(self):
+        
+        return ('turno:' + str(self.Fecha) + ' de ' + str(self.HoraDesde) + ' a '+ str(self.HoraHasta) + ' hs' + "\n")
 
-    def get_Atencion(self):
-        return self.Atencion
-
-    def set_Atencion(self, atencion):
-        self.Atencion = atencion

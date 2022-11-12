@@ -1,70 +1,63 @@
-import HorarioEspecialista
-import TurnoPorEspecialista
-class Especialista:
-    horarioDeAtencion = HorarioEspecialista()
-    turnos = TurnoPorEspecialista()
+from persona import Persona
+from HorarioDeAtencion import HorarioDeAtencion
+
+class Especialista(Persona):
+    horariosDeAtencion = []
     
-    def __init__(self, nombre, apellido, nroDNI, nroMatricula, especialidad, telefono, email, horarioDeAtencion, turnos):
-        self.Nombre = nombre
-        self.Apellido = apellido
-        self.NroDNI = nroDNI
-        self.NroMatricula = nroMatricula
+
+    
+    def __init__(self, contraseña, nombre, apellido, nroDNI, telefono, email, especialidad, horariosDeAtencion = []):
+        Persona.__init__(self,contraseña, nombre, apellido, nroDNI, telefono, email)
         self.Especialidad = especialidad
-        self.Telefono = telefono
-        self.Email = email
-        self.HorarioDeAtencion = horarioDeAtencion
-        self.Turnos = turnos
+        self.horariosDeAtencion = horariosDeAtencion #dentro de cada especialista va a haber varios horarios de atencion
 
-    def get_Nombre(self):
-        return self.Nombre
 
-    def set_Nombre(self, nombre):
-        self.Nombre = nombre
-
-    def get_Apellido(self):
-        return self.Apellido
-
-    def set_Apellido(self, apellido):
-        self.Apellido = apellido
-
-    def get_NroDNI(self):
-        return self.NroDNI
-
-    def set_NroDNI(self, nroDNI):
-        self.NroDNI = nroDNI
-
-    def get_NroMatricula(self):
-        return self.NroMatricula
-
-    def set_NroMatricula(self, nroMatricula):
-        self.NroMatricula = nroMatricula
-
+    
     def get_Especialidad(self):
         return self.Especialidad
 
     def set_Especialidad(self, especialidad):
         self.Especialidad = especialidad
     
-    def get_Telefono(self):
-        return self.Telefono
+    def get_HorariosDeAtencion(self):
+        return self.horariosDeAtencion
 
-    def set_Telefono(self, telefono):
-        self.Telefono = telefono
+    def set_HorariosDeAtencion(self, horariosDeAtencion):
+        self.horariosDeAtencion = horariosDeAtencion
 
-    def get_Email(self):
-        return self.Email
+    
+    def __str__(self):
+        return Persona.__str__(self) + "especialidad: " + self.Especialidad + " " + str(self.horariosDeAtencion) + "especialista/s.\n"
+        
+    def añadir_horario(self, h):
+        if not isinstance(h, HorarioDeAtencion):
+            raise Exception('añadir_horario: horario debe ser de la clase HorarioDeAtencion')
 
-    def set_Email(self, email):
-        self.Email = email
+        if h in self.horariosDeAtencion : 
+            indice = self.horariosDeAtencion.index(h)
+        else: 
+            self.horariosDeAtencion.append(h)
+    
+    def mostrar_horarios(self):
+        for h in self.horariosDeAtencion:
+           print(h)  # Print toma por defecto str(h)
+# try:
+#     h1 = HorarioDeAtencion("lunes", "8", "12")
+#     especialista1 = Especialista("5695", 'nora', 'lopez', "33222121", "332545", 'vdvd@nfnf', 'pediatra', [])
+#     #h1.DiaSemana = "lunes"
+#     #h1.HoraInicio = "8"
+#     #h1.HoraFin = "12"
 
-    def get_HorarioDeAtencion(self):
-        return self.HorarioDeAtencion
+#     #print(especialista1)
+#     h2 = HorarioDeAtencion("jueves", "13", "16")
+#     especialista1.añadir_horario(h2)
+#     especialista1.añadir_horario(h1)
+#     print(especialista1)
+#     especialista1.mostrar_horarios()
+    
+#     #h2 = HorarioDeAtencion("martes", "9", "13")
+#     #especialista1.añadir_horario(h2)
+#     #print(especialista1)
+# except Exception as e:
+#     print(e)
 
-    def set_HorarioDeAtencion(self, horarioDeAtencion):
-        self.HorarioDeAtencion = horarioDeAtencion
-
-    def get_Turnos(self):
-        return self.Turnos
-
-    def set_Turnos(self, turnos):
-        self.Turnos = turnos

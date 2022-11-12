@@ -1,53 +1,14 @@
-import ObraSocial
-class Paciente:
-    obraSocial = ObraSocial()
+from persona import Persona
+from obrasocial import ObraSocial
+
+class Paciente(Persona):
+    obraSocial = []
     
     def __init__(self, contraseña, nombre, apellido, nroDNI, telefono, email, nroAfiliado, obraSocial):
-        self.Contraseña = contraseña
-        self.Nombre = nombre
-        self.Apellido = apellido
-        self.NroDNI = nroDNI
-        self.Telefono = telefono
-        self.Email = email
+        Persona.__init__(self,contraseña, nombre, apellido, nroDNI, telefono, email)
         self.NroAfiliado = nroAfiliado
         self.ObraSocial = obraSocial
-
-    def get_Contraseña(self):
-        return self.Contraseña
-
-    def set_Contraseña(self, contraseña):
-        self.Contraseña= contraseña
-
-    def get_Nombre(self):
-        return self.Nombre
-
-    def set_Nombre(self, nombre):
-        self.Nombre = nombre
-
-    def get_Apellido(self):
-        return self.Apellido
-
-    def set_Apellido(self, apellido):
-        self.Apellido = apellido
-
-    def get_NroDNI(self):
-        return self.NroDNI
-
-    def set_NroDNI(self, nroDNI):
-        self.NroDNI = nroDNI
     
-    def get_Telefono(self):
-        return self.Telefono
-
-    def set_Telefono(self, telefono):
-        self.Telefono = telefono
-
-    def get_Email(self):
-        return self.Email
-
-    def set_Email(self, email):
-        self.Email = email
-
     def get_NroAfiliado(self):
         return self.NroAfiliado
 
@@ -59,3 +20,27 @@ class Paciente:
 
     def set_ObraSocial(self, obraSocial):
         self.ObraSocial = obraSocial
+    
+    def __str__(self):
+        return Persona.__str__(self) + "afiliado: " + self.NroAfiliado + " obra social: " + str(self.ObraSocial) + " paciente/s.\n"
+    
+    def añadir_obrasocial(self, os):
+        if not isinstance(os, ObraSocial):
+            raise Exception('añadir_obrasocial: obrasocial debe ser de la clase ObraSocial')
+
+        if os in self.ObraSocial : 
+            indice = self.ObraSocial.index(os)
+        else: 
+            self.ObraSocial.append(os)
+    
+    def mostrar_obrasocial(self):
+        for os in self.ObraSocial:
+           print(os)  
+        
+
+#paciente1 = Paciente("123", 'juan', 'perez', "33222111", "322545", 'vdvd@nfnf', "1", [])
+#print(paciente1)
+#os1 = ObraSocial("APROSS", "FAMILIAR")
+#paciente1.añadir_obrasocial(os1)
+#print(paciente1)
+#paciente1.mostrar_obrasocial()
