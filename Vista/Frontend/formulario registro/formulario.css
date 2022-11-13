@@ -1,6 +1,5 @@
-.fondo{
-    
-  background-image: url(foto.jpg);
+.fondo{  
+  background-image: url("foto.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

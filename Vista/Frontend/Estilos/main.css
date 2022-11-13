@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'open sans' , sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header__contNav {
@@ -13,7 +13,7 @@
 }
 
 .header__nav {
-  background-color: #61d1a0;
+  background-color: #6363ba;
 }
 
 .header__logo {
@@ -23,12 +23,8 @@
   padding-top: 1rem;
 }
 
-.header__logo img{
-  height: 70px;
-}
-
 .header__menuHamburguesa {
-  background-color: #61d1a0;
+  background-color: white;
   padding: 3px;
 }
 
@@ -49,22 +45,22 @@
 
 .header__link {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   margin-right: 1rem;
-  font-size: 1.2rem;
+  font-size: 0.7rem;
 }
 
 .header__link--activo {
-  color: #014836;
-  font-size: 1.3rem;
+  color: #14e0ff;
+  font-size: 0.8rem;
 }
 
 .header__link:hover {
-  color: #014836;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  color: #00d5ff;
+  -webkit-transition: 1s;
+  transition: 1s;
   text-decoration: underline;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
 }
 
 .header__contenedorBotones {
@@ -78,32 +74,32 @@
 }
 
 .header__boton {
-  background-color: #014836;
+  background-color: #5684e9;
   border-radius: 12px;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
 }
 
 .header__boton:hover {
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .header__aboton {
-  color: #ffffff;
+  color: white;
   padding: 8px 15px;
-  font-size: 1rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
+  -webkit-transition: color 1s;
+  transition: color 1s;
   text-decoration: none;
 }
 
 .header__aboton:hover {
-  color: #014836;
+  color: #0008ff;
 }
 
 .footer {
-  background-color: #61d1a0;
+  background-color: #6363ba;
 }
 
 .footer__contenido {
@@ -114,7 +110,7 @@
 
 .footer__copy {
   text-align: center;
-  color: #014836;
+  color: #cfc6c6;
   letter-spacing: 1px;
 }
 
@@ -131,19 +127,15 @@
 }
 
 .heroSection__titulo {
-  color: #014836;
+  color: #6062e7;
   font-size: 6rem;
-  font-family: Impact, Haettenschweiler, "Open sans", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
-  -webkit-text-stroke: #29292b 1.5px;
+  -webkit-text-stroke: white 1px;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
-}
-
-.heroSection__titulo img {
-  height: 220px;
 }
 
 @-webkit-keyframes aparecer {
@@ -166,8 +158,8 @@
 
 .heroSection__parrafo {
   text-align: center;
-  color: #61d1a0;
-  background-color: #00000070;
+  color: #0ad8ef;
+  background-color: rgba(0, 0, 0, 0.438);
   font-size: 1rem;
   border-radius: 30px;
 }
@@ -177,8 +169,8 @@
 }
 
 .Beneficios__cards {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #29292b), to(#014836));
-  background: linear-gradient(180deg, #29292b 60%, #014836 120%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #8e8c98), to(#6363ba));
+  background: linear-gradient(180deg, #8e8c98 80%, #6363ba 100%);
   padding: 18px;
   border-radius: 15px;
   -webkit-box-align: center;
@@ -187,13 +179,13 @@
 }
 
 .Beneficios__cardsTitle {
-  color: #61d1a0;
+  color: #3944aa;
   font-size: 1rem;
   text-align: center;
 }
 
 .Beneficios__cardsText {
-  color: #ffffff;
+  color: white;
   text-align: center;
   font-size: 0.8rem;
 }
@@ -217,10 +209,10 @@
 }
 
 .Nosotros__titulo {
-  color: #61d1a0;
+  color: #0051ff;
   font-size: 2rem;
   letter-spacing: 5px;
-  font-family: Impact, Haettenschweiler, "Open sans", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
@@ -244,7 +236,7 @@
 }
 
 .Nosotros__parrafo {
-  color: #000000;
+  color: black;
 }
 
 .Nosotros__img {
@@ -253,8 +245,8 @@
 
 .historia {
   margin-bottom: 5rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #29292b), to(#014836));
-  background: linear-gradient(180deg, #29292b 80%, #014836 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #b8b7be), to(#6363ba));
+  background: linear-gradient(180deg, #b8b7be 80%, #6363ba 100%);
   padding: 2rem;
   display: inline-block;
   -webkit-box-align: center;
@@ -266,7 +258,7 @@
   color: #f8f3f3;
   font-size: 2rem;
   letter-spacing: 5px;
-  font-family: Impact, Haettenschweiler, "open sans", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
@@ -284,7 +276,7 @@
 }
 
 .historia__parrafo {
-  color: #61d1a0;
+  color: #3944aa;
 }
 
 .historia .historia__ContenedorImg {
@@ -300,14 +292,13 @@
 .historia__img {
   width: 100%;
   margin: auto;
-  border-radius: 15px;
 }
 
 .NuestrosServicios__encabezado {
-  color: #61d1a0;
+  color: #0080ff;
   font-size: 2rem;
   letter-spacing: 5px;
-  font-family: impact, 'open sans';
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
@@ -318,15 +309,15 @@
 }
 
 .NuestrosServicios__cards {
-  background: #61d1a0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #29292b), to(#014836));
-  background: linear-gradient(180deg, #29292b 80%, #61d1a0 140%);
+  background: #5271e3;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(131, 134, 139, 0.986)), to(#72b3e4));
+  background: linear-gradient(180deg, rgba(131, 134, 139, 0.986) 80%, #72b3e4 100%);
   width: 18rem;
   padding: 10px;
 }
 
 .NuestrosServicios__titulo {
-  color: #61d1a0;
+  color: #8dcaf2;
   font-size: 1.8rem;
   letter-spacing: 1px;
 }
@@ -343,12 +334,12 @@
   color: white;
   font-size: 3rem;
   letter-spacing: 6px;
-  font-family: Impact, Haettenschweiler, "open sans", sans-serif;
-  -webkit-text-stroke: #61d1a0 2.5px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-text-stroke: #0008ff 2.5px;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .contactos__img {
@@ -357,19 +348,18 @@
 }
 
 .contactos__form {
-  color: #61d1a0;
+  color: #0040ff;
   letter-spacing: 1px;
 }
 
 .contUbicacion {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #29292b), to(100% #014836));
-  background: linear-gradient(180deg, #29292b 60%, #61d1a0 120%);
+  background-color: #a39a9a;
   margin-top: 4rem;
   padding-top: 2rem;
 }
 
 .ubicacion__titulo {
-  color: #ffffff;
+  color: white;
   font-size: 3rem;
   letter-spacing: 2px;
 }
@@ -393,12 +383,12 @@
 
 .ingresar__title {
   text-align: center;
-  color: #61d1a0;
+  color: #2a3deb;
   font-size: 40px;
 }
 
 .ingresar__form {
-  background-color: #29292b;
+  background-color: white;
   margin-top: 150px;
   padding: 3px;
 }
@@ -415,12 +405,11 @@
   width: 82%;
   padding: 10px;
   border: none;
-  background-color: #29292b;
 }
 
 .ingresar__contenedorInput {
   margin-bottom: 15px;
-  border: 1px solid #61d1a0;
+  border: 1px solid #2a3deb;
 }
 
 .ingresar__icon {
@@ -433,32 +422,30 @@
   border: none;
   width: 100%;
   font-size: 20px;
-  color: #ffffff;
-  background-color: #61d1a0;
+  color: #2a3deb;
   padding: 15px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .ingresar__boton:hover {
-  background-color: #014836;
-  color: #ffffff;
+  background-color: #646eca;
+  color: white;
 }
 
 .ingresar__p {
   text-align: center;
   font-size: 0.8rem;
-  color: #ffffff;
 }
 
 .ingresar__link {
   text-decoration: none;
-  color: #61d1a0;
+  color: #2a3deb;
   font-weight: 600;
 }
 
 .ingresar__link:hover {
-  color: #61d1a0;
+  color: #6b75ca;
 }
 
 @media (min-width: 768px) {
@@ -471,18 +458,18 @@
 }
 
 .boton {
-  background-color: #014836;
+  background-color: rgba(255, 255, 255, 0.626);
   border-radius: 12px;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
 }
 
 .boton:hover {
-  background-color: #ffffff;
+  background-color: #0051ff;
 }
 
 .aboton {
-  color: #ffffff;
+  color: #0051ff;
   padding: 8px 15px;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -492,26 +479,22 @@
 }
 
 .aboton:hover {
-  color: #014836;
+  color: white;
 }
 
 .boton__form {
-  background-color: #014836;
+  background-color: #0051ff;
   border-radius: 12px;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
 
 .boton__form:hover {
-  background-color: #61d1a0;
-}
-
-.Nosotros__img{
-  border-radius: 12px;
+  background-color: white;
 }
 
 .aboton__form {
-  color: #ffffff;
+  color: white;
   padding: 1px 8px;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -521,7 +504,7 @@
 }
 
 .aboton__form:hover {
-  color: #ffffff;
+  color: #0051ff;
 }
 
 @media only screen and (max-width: 700px) {

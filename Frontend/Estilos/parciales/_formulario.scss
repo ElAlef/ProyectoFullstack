@@ -1,0 +1,113 @@
+.fondo {
+  background-image: url(../assets/ingresar/ingresar.jpg);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 30%;
+  display: inline;
+  padding: 30px;
+}
+
+.container {
+  background-color: rgba(124, 194, 244, 0.555);
+  width: 50%;
+  padding: 20px;
+}
+
+.titulo {
+  color: rgb(1, 42, 118);
+  text-align: center;
+}
+
+.nav-enlace {
+  background: #0c65ea;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.nav-enlace:hover {
+  background: #f7f2f2;
+}
+nav {
+  background: gray;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-boton {
+  background: rgba(0, 0, 255, 0.753);
+  color: #fff;
+  padding: 10px 0;
+  border: 2px solid #fff;
+  display: none;
+}
+
+.botonRegistrarse {
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ParrafoPieRegistro {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.linkPieRegistro {
+  text-decoration: none;
+  color: rgb(8, 0, 255);
+  font-weight: 600;
+}
+
+.linkPieRegistro:hover {
+  color: rgb(0, 0, 0);
+}
+
+.ParrafoVolver {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.linkVolver {
+  text-decoration: none;
+  color: rgb(8, 0, 255);
+  font-weight: 600;
+}
+
+.linkVolver:hover {
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+  nav {
+    background: black;
+    flex-direction: column;
+  }
+
+  .nav-enlace {
+    margin: 10px 0;
+  }
+  .nav-boton {
+    display: inline-block;
+  }
+  .desaparece {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+}

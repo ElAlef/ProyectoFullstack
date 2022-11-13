@@ -14,9 +14,10 @@
   }
 
   &__form {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.842);
     margin-top: 150px;
     padding: 3px;
+    text-align: center;
   }
 
   &__contenedorForm {
@@ -24,11 +25,15 @@
     padding: 15px;
   }
 
-  input[type="text"],
+  // input[type="text"],
   input[type="email"],
-  input[type="password"] {
+  input[type="password"]
+  // input[type="time"],
+  // input[type="date"],
+  // select
+  {
     font-size: 20px;
-    width: 82%;
+    width: 80%;
     padding: 10px;
     border: none;
   }
@@ -47,14 +52,30 @@
   &__boton {
     border: none;
     width: 100%;
-    font-size: 20px;
+    text-align: center;
+    font-size: 30px;
     color: rgb(42, 61, 235);
     padding: 15px 20px;
     border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
   }
 
-  &__boton:hover {
+  &__enlace {
+    border: none;
+    width: 100%;
+    font-size: 30px;
+    color: rgb(42, 61, 235);
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgba(235, 227, 227, 0.615);
+    cursor: pointer;
+  }
+
+  &__boton:hover,
+  &__enlace:hover {
     background-color: rgb(100, 110, 202);
     color: white;
   }
@@ -62,6 +83,7 @@
   &__p {
     text-align: center;
     font-size: 0.8rem;
+    margin-top: 10px;
   }
 
   &__link {
@@ -71,7 +93,8 @@
   }
 
   &__link:hover {
-    color: rgb(107, 117, 202);
+    // color: rgb(255, 0, 183);
+    color: rgb(0, 0, 0);
   }
 }
 

@@ -7,14 +7,24 @@
   height: 80vh;
   padding: 3rem;
 
+  &__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__titulo {
-    color: rgb(96, 98, 231);
+    color: rgb(231, 112, 96);
     font-size: 6rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-align: center;
     -webkit-text-stroke: rgb(255, 255, 255) 1px;
     animation-name: aparecer;
     animation-duration: 4s;
+  }
+
+  &__logo {
+    width: 250px;
+    margin-bottom: 1rem;
   }
 
   @keyframes aparecer {
@@ -27,6 +37,7 @@
   }
 
   &__parrafo {
+    width: 300px;
     text-align: center;
     color: rgb(10, 216, 239);
     background-color: rgba(0, 0, 0, 0.438);

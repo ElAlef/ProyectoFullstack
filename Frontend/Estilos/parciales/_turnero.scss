@@ -1,0 +1,97 @@
+.turnero {
+  background-image: url(../assets/turnero/turnero1.jpg);
+  //   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+
+  &__title {
+    text-align: center;
+    color: rgb(0, 51, 255);
+    font-size: 40px;
+  }
+
+  &__titleCampo {
+    color: rgb(0, 0, 0);
+  }
+
+  &__intro {
+    background-color: rgba(0, 0, 0, 0.572);
+    border-radius: 5%;
+    padding: 5px;
+    color: aliceblue;
+  }
+
+  &__tituloIntro {
+    font-size: 1.5rem;
+    text-align: center;
+    color: aqua;
+  }
+
+  &__form {
+    background-color: rgba(22, 202, 215, 0.519);
+    text-align: center;
+  }
+
+  &__contenedorForm {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 100px;
+    background-color: rgba(186, 224, 232, 0.548);
+  }
+
+  input[type="time"],
+  input[type="date"],
+  select {
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    color: rgb(92, 92, 217);
+    background-color: rgba(255, 250, 253, 0.375);
+  }
+
+  &__contenedorInput {
+    margin-bottom: 15px;
+    border: 1px solid rgb(42, 61, 235);
+    background-color: rgba(255, 250, 253, 0.625);
+  }
+
+  &__boton {
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(231, 231, 235);
+    background-color: rgb(111, 109, 109);
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__boton:hover,
+  &__enlace:hover {
+    background-color: rgb(100, 110, 202);
+    color: white;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgb(42, 61, 235);
+    font-weight: 600;
+  }
+
+  &__link:hover {
+    color: rgb(107, 117, 202);
+  }
+}
+
+@media (min-width: 768px) {
+  .turnero__form {
+    margin: auto;
+    width: 500px;
+    margin-top: 100px;
+    border-radius: 2%;
+  }
+}
