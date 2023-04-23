@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+ background: #fffffa;
+
+}
+header{
+    width: 100%;
+    overflow: hidden;
+    background: #f2f5f7;
+    margin-bottom: 20px;
+    position: fixed;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo1 img{
+    width: 50px;
+    height: 50px;
+    line-height: 200px;
+    margin-top: 70px;
+    float: left;
+} 
+
+.logo {
+    font-family: 'Akronim', cursive;
+    color:#2a8dac;
+    font-size: 50px;
+    line-height: 200px;
+    float: left;
+}
+
+header nav{
+    float: right;
+    line-height: 200px;
+}
+header nav a{
+    display: inline-block;
+    color: #4e4e4b;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease ;
+    transition: all 1000ms ease ;
+}
+
+header nav a:hover  {
+    background: #2a8dac;
+    border-radius: 50px;
+}
+
+.header2 {
+    position: fixed;
+    height: 100px;
+}
+
+.header2 .logo1 img{
+    width: 30px;
+    height: 30px;
+    line-height: 100px;
+    margin-top: 32px;
+}
+
+.header2 .logo{
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.header2 nav {
+    line-height: 100px;
+}
+
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor-slider{
+    width: 100%;
+    display: flex;
+}
+
+.slider{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    background: url(/cards/slider/fondo1.jpg);
+}
+
+.slider:nth-child(2){
+    background:url(/cards/slider/fondo2.jpg);
+    color: #fff;
+}
+.slider:nth-child(2) a{
+    background: #fff;
+    color:#63c8e7 ;
+}
+
+/*.slider:nth-child(3){
+    background-image:url(/cards/slider/fondo1.jpg);
+
+}
+.slider:nth-child(3) a{
+    background: #63c8e7;
+    color:#fff ;
+}*/
+
+.slider img{
+    width: 400px;
+    display: none;
+}
+.slider div{
+    width: 40%;
+}
+
+.slider h5{
+    font-weight: 300;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.slider a{
+    color: #fff;
+    background:#90dcf3;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+
+.contenido p{
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width:950px) {
+    
+    header .logo1 .logo1
+    header nav {
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .header2{
+        height: auto;
+    }
+    .header2 .logo1
+    .header2 .logo,
+    .header2 nav {
+        line-height:50px;
+    }
+
+  
+    .contenido-slider div{
+        width: 40%;
+    }
+    .contenido-slider h5{
+        font-size: 23px;
+    }
+}
+@media screen and (max-width:600px){
+    .contenido-slider{
+        flex-direction: column-reverse;
+    }
+    .contenido-slider div{
+        width: 0%;
+    }
+}
+    
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.texto{
+    text-align: justify;
+    align-content: center;
+    margin: auto;
+    float: inline-start;
+}
+.logo2 img{
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    float: left;
+} 
+
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1150px;
+}
+
+.card{
+    width: 100%;
+    margin: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%)
+}
+.card img{
+    width: 100%;
+    height: 350px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+.card .contenido h3{
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2a8dac;
+    border: 1px solid #2a8dac;
+    border-radius: 4px;
+    transition: all 400 ease;
+} 
+.card .contenido a:hover{
+    background: #2a8dac;
+    color: #fff;
+    
+}
+#mapa{
+    height: 500px;
+    width: 100%;
+
+}
