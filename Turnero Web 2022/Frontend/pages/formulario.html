@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro con validacion en js</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Estilos/main.css">
+</head>
+
+
+<body class="fondo">
+
+  <p class="ParrafoVolver">Volver al <a href="../index.html" class="linkVolver"><b>Inicio</b></a></p>
+
+  <div class="container">
+    <h1 class="titulo">Registrarse</h1>
+    <!-- <button class="nav-boton" onclick="accion()">MENU</button>
+    <a href="#" class="nav-enlace desaparece">Inicio</a> -->
+    <p></p>
+    <p></p>
+    <form id="formulario" novalidate>
+      <input class="form-control mb-2" type="text" name="username" placeholder="Ingrese Nombre" autocomplete="off"
+        id="username" required minlength="3" maxlength="30" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="solo letras en el nombre">
+      <p class="text-danger mb-2 d-none" id="alertName"></p>
+
+
+      <input class="form-control mb-2" type="text" name="userApellido" placeholder="Ingrese apellido" autocomplete="off"
+        id="userApellido" required minlength="3" maxlength="30" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="solo letras en el Apellido">
+      <p class="text-danger mb-2 d-none" id="alertApellido"></p>
+
+
+
+      <input class="form-control mb-2" type="text" name="userDni" placeholder="Ingrese su DNI" autocomplete="off"
+        id="userDni" required minlength="3" maxlength="10" pattern="^[\d]{1,3}\.?[\d]{3,3}\.?[\d]{3,3}$"
+        title="solo numeros en el DNI">
+      <p class="text-danger mb-2 d-none" id="alertDni"></p>
+
+
+      <input class="form-control mb-2" type="text" name="userTelefono"
+        placeholder="Ingrese su número de Telefono sin el '0' en el prefijo y sin el '15' en el número"
+        autocomplete="off" id="userTelefono" required minlength="3" maxlength="10"
+        pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$" title="solo numeros en el TELEFONO">
+      <p class="text-danger mb-2 d-none" id="alertTelefono"></p>
+
+
+
+
+      <input class="form-control mb-2" type="email" placeholder="Ingrese correo" name="useremail" id="useremail"
+        autocomplete="off" required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+        title="Ingresa un correo valido">
+      <p class="text-danger mb-2 d-none" id="alertEmail"></p>
+
+
+      <input class="form-control mb-2" type="text" placeholder="Ingrese usuario" name="userUsuario" id="userUsuario"
+        autocomplete="off" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Ingresa un usuario valido">
+      <p class="text-danger mb-2 d-none" id="alertUsuario"></p>
+      <p><b>Ingrese nueva contraseña</b></p>
+
+
+      <input class="form-control mb-2" type="password" placeholder="Ingrese contraseña" name="userContrasena"
+        id="userContrasena" autocomplete="off" required pattern=" ^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"
+        title="Ingresa una contraseña">
+      <p class="text-danger mb-2 d-none" id="alertContrasena"></p>
+      <p><b>confirmar contraseña</b></p>
+
+      <input class="form-control mb-2" type="password" placeholder="confirmar contraseña" name="userContrasena1"
+        id="userContrasena1" autocomplete="off" required pattern=" ^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"
+        title="Ingresa una contraseña1">
+      <p class="text-danger mb-2 d-none" id="alertContrasena1"></p>
+
+
+
+      <p></p>
+
+      <button type="submit" class="btn btn-primary botonRegistrarse">Registrarse</button>
+    </form>
+
+    <p class="ParrafoPieRegistro"> <small>Al registrate aceptas nuestras condiciones de uso y
+        políticas de privacidad</small> </p>
+    <p class="ParrafoPieRegistro">¿Ya tiene cuenta? <a href="./IniciarSesion.html" class="linkPieRegistro"><b>Iniciar
+          sesión</b></a></p>
+
+    <div class="alert alert-success my-2 d-none" id="Alertsuccess"></div>
+  </div>
+  <script src="../Js/formulario.js"></script>
+</body>
+
+</html>

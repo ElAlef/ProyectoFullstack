@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: "Bebas Neue", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+
+@import "./parciales/header";
+@import "./parciales/footer";
+@import "./parciales/index";
+@import "./parciales/nosotros";
+@import "./parciales/servicios";
+@import "./parciales/contactos";
+@import "./parciales/turnero";
+@import "./parciales/ingresar";
+@import "./parciales/botones";
+@import "./parciales/formulario";
+@import "./parciales/media-queries";
