@@ -1,0 +1,89 @@
+.header__contNav {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  
+  .header__nav {
+    background-color: #6363ba;
+  }
+  
+  .header__logo {
+    width: 100px;
+    margin-left: 1rem;
+  }
+  
+  .header__menuHamburguesa {
+    background-color: white;
+    padding: 3px;
+  }
+  
+  .header__ul {
+    margin-top: 1rem;
+  }
+  
+  .header__items {
+    margin-right: 1rem;
+  }
+  
+  .header__items:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    text-decoration: underline;
+    font-size: 1rem;
+  }
+  
+  .header__link {
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+    font-size: 0.7rem;
+  }
+  
+  .header__link--activo {
+    color: #14e0ff;
+    font-size: 0.8rem;
+  }
+  
+  .header__link:hover {
+    color: #00d5ff;
+    -webkit-transition: 1s;
+    transition: 1s;
+    text-decoration: underline;
+    font-size: 0.8rem;
+  }
+  
+  .header__contenedorBotones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .header__boton {
+    background-color: #5684e9;
+    border-radius: 12px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+  }
+  
+  .header__boton:hover {
+    background-color: white;
+  }
+  
+  .header__aboton {
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    text-decoration: none;
+  }
+  
+  .header__aboton:hover {
+    color: #0008ff;
+  }
