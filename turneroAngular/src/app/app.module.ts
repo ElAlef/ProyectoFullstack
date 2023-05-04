@@ -8,6 +8,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
+import { RegistroComponent } from './componentes/registro/registro.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
     AppComponent,
     HeaderComponent,
     LoginComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
