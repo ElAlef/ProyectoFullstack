@@ -1,0 +1,69 @@
+.contactos {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  
+  .contactos__titulo {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 6px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    -webkit-text-stroke: #0008ff 2.5px;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+  
+  .contactos__img {
+    width: 18rem;
+    border-radius: 0.5rem;
+  }
+  
+  .contactos__form {
+    color: #0040ff;
+    letter-spacing: 1px;
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .contUbicacion {
+    background-color: #a39a9a;
+    margin-top: 4rem;
+    padding: 10px;
+  }
+  
+  .ubicacion__titulo {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  .mapa {
+    border-radius: 1.5rem;
+  }
+  
+  .LogosUbicacion {
+    padding: 50px;
+  }
+  
+  .LogosUbicacion__parrafo {
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+  }

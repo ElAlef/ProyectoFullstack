@@ -7,13 +7,20 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
+import { ContactosComponent } from './pages/contactos/contactos.component';
+import { RegistroComponent } from './componentes/registro/registro.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    ServiciosComponent,
+    ContactosComponent,
+    RegistroComponent
+
   ],
   imports: [
     BrowserModule,
