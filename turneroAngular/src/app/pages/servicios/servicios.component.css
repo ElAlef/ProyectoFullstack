@@ -1,0 +1,32 @@
+.NuestrosServicios__encabezado {
+    color: #0080ff;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+  
+  .NuestrosServicios__cards {
+    background: #5271e3;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(131, 134, 139, 0.986)), to(#72b3e4));
+    background: linear-gradient(180deg, rgba(131, 134, 139, 0.986) 80%, #72b3e4 100%);
+    width: 18rem;
+    padding: 10px;
+  }
+  
+  .NuestrosServicios__titulo {
+    color: #8dcaf2;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  
+  .NuestrosServicios__parrafo {
+    color: #fff9f9;
+  }
+  

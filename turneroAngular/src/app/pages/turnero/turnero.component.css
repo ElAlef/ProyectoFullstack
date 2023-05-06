@@ -1,0 +1,86 @@
+.turnero {
+    
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
+  
+  .turnero__title {
+    text-align: center;
+    color: #0033ff;
+    font-size: 40px;
+  }
+  
+  .turnero__titleCampo {
+    color: black;
+  }
+  
+  .turnero__intro {
+    background-color: rgba(0, 0, 0, 0.572);
+    border-radius: 5%;
+    padding: 5px;
+    color: aliceblue;
+  }
+  
+  .turnero__tituloIntro {
+    font-size: 1.5rem;
+    text-align: center;
+    color: aqua;
+  }
+  
+  .turnero__form {
+    background-color: rgba(22, 202, 215, 0.519);
+    text-align: center;
+  }
+  
+  .turnero__contenedorForm {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 100px;
+    background-color: rgba(186, 224, 232, 0.548);
+  }
+  
+  .turnero input[type="time"],
+  .turnero input[type="date"],
+  .turnero select {
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    color: #5c5cd9;
+    background-color: rgba(255, 250, 253, 0.375);
+  }
+  
+  .turnero__contenedorInput {
+    margin-bottom: 15px;
+    border: 1px solid #2a3deb;
+    background-color: rgba(255, 250, 253, 0.625);
+  }
+  
+  .turnero__boton {
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #e7e7eb;
+    background-color: #6f6d6d;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .turnero__boton:hover, .turnero__enlace:hover {
+    background-color: #646eca;
+    color: white;
+  }
+  
+  .turnero__link {
+    text-decoration: none;
+    color: #2a3deb;
+    font-weight: 600;
+  }
+  
+  .turnero__link:hover {
+    color: #6b75ca;
+  }
