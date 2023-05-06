@@ -1,5 +1,5 @@
 .footer {
-    background-color: #6363ba;
+    background-color: #fefefe;
   }
   
   .footer__contenido {
@@ -10,10 +10,10 @@
   
   .footer__copy {
     text-align: center;
-    color: #cfc6c6;
+    color: #515151;
     letter-spacing: 1px;
   }
   
   .footer__iconos {
-    width: 75px;
+    width: 50px;
   }

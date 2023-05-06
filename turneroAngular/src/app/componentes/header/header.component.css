@@ -5,7 +5,7 @@
   }
   
   .header__nav {
-    background-color: #6363ba;
+    background-color: #fefefe;
   }
   
   .header__logo {
@@ -14,7 +14,7 @@
   }
   
   .header__menuHamburguesa {
-    background-color: white;
+    background-color: "#515151";
     padding: 3px;
   }
   
@@ -35,18 +35,18 @@
   
   .header__link {
     text-decoration: none;
-    color: white;
+    color: #515151;
     margin-right: 1rem;
     font-size: 0.7rem;
   }
   
   .header__link--activo {
-    color: #14e0ff;
+    color: #8dcaf2;
     font-size: 0.8rem;
   }
   
   .header__link:hover {
-    color: #00d5ff;
+    color: #8dcaf2;
     -webkit-transition: 1s;
     transition: 1s;
     text-decoration: underline;
@@ -64,18 +64,18 @@
   }
   
   .header__boton {
-    background-color: #5684e9;
+    background-color: #8dcaf2;
     border-radius: 12px;
     -webkit-transition: background-color 1s;
     transition: background-color 1s;
   }
   
   .header__boton:hover {
-    background-color: white;
+    background-color: rgb(167, 162, 162);
   }
   
   .header__aboton {
-    color: white;
+    color: rgb(165, 164, 164);
     padding: 8px 15px;
     font-size: 0.7rem;
     letter-spacing: 2px;
@@ -85,5 +85,5 @@
   }
   
   .header__aboton:hover {
-    color: #0008ff;
+    color: #8dcaf2;
   }
