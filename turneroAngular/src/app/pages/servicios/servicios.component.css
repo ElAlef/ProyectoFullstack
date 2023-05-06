@@ -11,7 +11,7 @@
     margin-bottom: 5rem;
     margin-top: 5rem;
   }
-  
+
   .NuestrosServicios__cards {
     background: #fefefe;
     /*background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(131, 134, 139, 0.986)), to(#72b3e4));
@@ -31,7 +31,7 @@
     color: #fff9f9;
   }
   
-  .NuestrosServicios__img {
-    border-radius: 5px 60px 5px 60px;
+  .card-img-top {
+    border-radius: 5px 60px 5px 5px;
 
   }
