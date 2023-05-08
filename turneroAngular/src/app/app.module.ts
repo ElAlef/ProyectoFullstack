@@ -10,7 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './footer/footer.componen
+import { TurneroComponent } from './pages/turnero/turnero.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     ServiciosComponent,
     ContactosComponent,
     RegistroComponent,
-    FooterComponent
+    FooterComponen
+    TurneroComponent
 
   ],
   imports: [
