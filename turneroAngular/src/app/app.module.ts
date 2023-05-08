@@ -22,9 +22,8 @@ import { TurneroComponent } from './pages/turnero/turnero.component';
     ServiciosComponent,
     ContactosComponent,
     RegistroComponent,
-    FooterComponent
-
-
+    FooterComponent,
+    TurneroComponent,
   ],
   imports: [
     BrowserModule,
