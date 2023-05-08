@@ -34,6 +34,12 @@
   margin-right: 1rem;
 }
 
+
+.datos-solicitados {
+  color: #fff
+}
+
+
 .header__items:hover {
   -webkit-transition: 1s;
   transition: 1s;
@@ -672,15 +678,24 @@
 }
 
 .container {
-  background-color: rgba(124, 194, 244, 0.555);
+  background-color: #6363bad7;
   width: 50%;
   padding: 20px;
 }
 
 .titulo {
-  color: #012a76;
+  color: #fff;
   text-align: center;
 }
+
+.Contra-nueva{
+  color:  #fff;
+}
+
+.contra-confirmar {
+  color: #fff
+}
+
 
 .nav-enlace {
   background: #0c65ea;
@@ -718,7 +733,8 @@ nav {
   width: 100%;
   text-align: center;
   font-size: 30px;
-  color: black;
+  background-color: #2f2f72;
+  color: rgb(255, 255, 255);
   padding: 15px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -733,7 +749,7 @@ nav {
 
 .linkPieRegistro {
   text-decoration: none;
-  color: #0800ff;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -750,7 +766,7 @@ nav {
 
 .linkVolver {
   text-decoration: none;
-  color: #0800ff;
+  color: #43439b;
   font-weight: 600;
 }
 
