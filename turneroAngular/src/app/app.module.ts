@@ -11,6 +11,7 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { FooterComponent } from './footer/footer.component';
+import { TurneroComponent } from './pages/turnero/turnero.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
     ContactosComponent,
     RegistroComponent,
     FooterComponent
+
 
   ],
   imports: [

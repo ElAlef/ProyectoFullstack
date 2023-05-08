@@ -16,9 +16,9 @@
     background: rgba(255, 255, 255, 0.15);
     padding: 2rem 3rem;
     margin: auto;
-    border-radius: 2.5rem;
+    border-radius: 0.5rem;
     background-color: #ecf0f3;
-    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    
     color: black;
     margin-top: 10rem;
   }
@@ -41,11 +41,11 @@
     font-size: 0.875rem;
     color: #ffffff;
     font-weight: bold;
-    background-color: #bcd8c1;
+    background-color: #028bd4;
     width: 100%;
     display: block;
     padding: 0.875rem 1rem;
-    border-radius: 1.5rem;
-    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    border-radius: 0.5rem;
+    
     cursor: pointer;
   }
