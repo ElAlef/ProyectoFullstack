@@ -81,7 +81,7 @@ formulario.addEventListener('submit' , e =>{
       userApellido.classList.add("is-invalid")
         errores.push({
           tipo: alertApellido,
-          msg: "Formato no válido en el campo Apellido, solo letras"
+          msg: "Formato no válido en el campo apellido, solo letras"
         })
     }else{
       userApellido.classList.remove("is-invalid")
@@ -112,7 +112,7 @@ formulario.addEventListener('submit' , e =>{
       userTelefono.classList.add("is-invalid")
         errores.push({
           tipo: alertTelefono,
-          msg: "Formato no válido en el campo TELEFONO, solo numeros"
+          msg: "Formato no válido en el campo telefono, solo numeros"
         })
     }else{
       userTelefono.classList.remove("is-invalid")
@@ -143,7 +143,7 @@ formulario.addEventListener('submit' , e =>{
         errores.push({
           tipo: alertContrasena,
           tipo: alertContrasena1,
-          msg: "contraseña no valido"
+          msg: "Sus contraseñas no coinciden"
         
    
           
@@ -161,7 +161,7 @@ formulario.addEventListener('submit' , e =>{
       useremail.classList.add("is-invalid")
       errores.push({
         tipo: alertEmail,
-        msg: "Escriba un correo válido"
+        msg: "Escriba un correo electronico válido"
       })
     }else{
       useremail.classList.remove("is-invalid")
