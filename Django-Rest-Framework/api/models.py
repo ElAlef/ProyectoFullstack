@@ -13,7 +13,6 @@ class Persona(models.Model):
 class Paciente(models.Model):
     contraseña = models.CharField(max_lenght=50)
     nroAfiliado = models.PositiveIntegerField()
-
 class ReservaDeTurno(models.Model):
     paciente = Paciente
     fecha = models.DateField()
