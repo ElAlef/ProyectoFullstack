@@ -1,8 +1,8 @@
 .NuestrosServicios__encabezado {
-    color: #0080ff;
+    color: #8dcaf2;
     font-size: 2rem;
     letter-spacing: 5px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: Impact, Haettenschweiler, "Plantin Bold", sans-serif;
     text-align: center;
     -webkit-animation-name: aparecer;
             animation-name: aparecer;
@@ -11,13 +11,14 @@
     margin-bottom: 5rem;
     margin-top: 5rem;
   }
-  
+
   .NuestrosServicios__cards {
-    background: #5271e3;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(131, 134, 139, 0.986)), to(#72b3e4));
-    background: linear-gradient(180deg, rgba(131, 134, 139, 0.986) 80%, #72b3e4 100%);
-    width: 18rem;
+    background: #fefefe;
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(131, 134, 139, 0.986)), to(#72b3e4));
+    background: linear-gradient(180deg, rgba(131, 134, 139, 0.986) 80%, #72b3e4 100%);*/
+    width: 15rem;
     padding: 10px;
+    border-radius: 5px 60px 5px 60px;
   }
   
   .NuestrosServicios__titulo {
@@ -30,3 +31,41 @@
     color: #fff9f9;
   }
   
+  .card-img-top {
+    border-radius: 5px 60px 5px 5px;
+
+  }
+
+  .boton {
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+  }
+
+  .turno__boton {
+    display: flex;
+    align-items: center;
+    background-color: #8dcaf2;
+    border-radius: 60px;
+      -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    
+  }
+  
+  .turno__boton:hover {
+    background-color: rgb(167, 162, 162);
+  }
+  
+  .turno__aboton {
+    color: rgb(165, 164, 164);
+    padding: 8px 5px;
+    font-size: rem;
+    letter-spacing: 2px;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    text-decoration: none;
+  }
+  
+  .turno__aboton:hover {
+    color: #8dcaf2;
+  }

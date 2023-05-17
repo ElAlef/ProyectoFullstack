@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
+import { FooterComponent } from './footer/footer.component';
 import { TurneroComponent } from './pages/turnero/turnero.component';
 import { HttpClientModule} from '@angular/common/http';
 import { EspecialistasComponent } from './componentes/especialistas/especialistas.component';
@@ -22,8 +23,13 @@ import { EspecialistasComponent } from './componentes/especialistas/especialista
     ServiciosComponent,
     ContactosComponent,
     RegistroComponent,
+<<<<<<< HEAD
     TurneroComponent,
     EspecialistasComponent
+=======
+    FooterComponent,
+    TurneroComponent,
+>>>>>>> 64193b22556119375396c09ca806fded5ec20fbc
 
   ],
   imports: [
@@ -31,7 +37,7 @@ import { EspecialistasComponent } from './componentes/especialistas/especialista
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

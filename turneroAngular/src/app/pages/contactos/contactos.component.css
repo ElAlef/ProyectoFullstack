@@ -17,11 +17,11 @@
   }
   
   .contactos__titulo {
-    color: white;
+    color: #fefefe;
     font-size: 3rem;
     letter-spacing: 6px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    -webkit-text-stroke: #0008ff 2.5px;
+    font-family: Impact, Haettenschweiler, "Plantin Bold", sans-serif;
+    -webkit-text-stroke: #8dcaf2 2.5px;
     -webkit-animation-name: aparecer;
             animation-name: aparecer;
     -webkit-animation-duration: 4s;
@@ -34,7 +34,7 @@
   }
   
   .contactos__form {
-    color: #0040ff;
+    color: #8dcaf2;
     letter-spacing: 1px;
     width: 80%;
     -webkit-box-align: center;
@@ -43,13 +43,13 @@
   }
   
   .contUbicacion {
-    background-color: #a39a9a;
+    background-color: #515151;
     margin-top: 4rem;
     padding: 10px;
   }
   
   .ubicacion__titulo {
-    color: white;
+    color: #fefefe;
     font-size: 3rem;
     letter-spacing: 2px;
   }
@@ -63,7 +63,7 @@
   }
   
   .LogosUbicacion__parrafo {
-    color: white;
+    color: #fefefe;
     font-size: 0.7rem;
     margin-top: 0.5rem;
   }
