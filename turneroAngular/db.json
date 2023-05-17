@@ -1,0 +1,27 @@
+{
+  "especialistas": [
+    {
+      "id": 1,
+      "especialidad": "psiquiatria",
+      "nombre": "chepatin",
+      "atencion": "lunes de 10hs a 12hs"
+    },
+    {
+      "id": 2,
+      "especialidad": "pediatria",
+      "nombre": "guzman",
+      "atencion": "viernes de 10hs a 12hs"
+    }
+   
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

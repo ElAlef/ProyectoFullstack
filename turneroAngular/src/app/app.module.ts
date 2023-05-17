@@ -11,7 +11,8 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { TurneroComponent } from './pages/turnero/turnero.component';
-
+import { HttpClientModule} from '@angular/common/http';
+import { EspecialistasComponent } from './componentes/especialistas/especialistas.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,14 @@ import { TurneroComponent } from './pages/turnero/turnero.component';
     ServiciosComponent,
     ContactosComponent,
     RegistroComponent,
-    TurneroComponent
+    TurneroComponent,
+    EspecialistasComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule
   ],
