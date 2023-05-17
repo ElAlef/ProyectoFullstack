@@ -12,7 +12,8 @@ import { ContactosComponent } from './pages/contactos/contactos.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { FooterComponent } from './footer/footer.component';
 import { TurneroComponent } from './pages/turnero/turnero.component';
-
+import { HttpClientModule} from '@angular/common/http';
+import { EspecialistasComponent } from './componentes/especialistas/especialistas.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,19 @@ import { TurneroComponent } from './pages/turnero/turnero.component';
     ServiciosComponent,
     ContactosComponent,
     RegistroComponent,
+
+    TurneroComponent,
+    EspecialistasComponent
+
     FooterComponent,
     TurneroComponent,
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
   ],
