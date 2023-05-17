@@ -24,12 +24,22 @@ import { EspecialistasComponent } from './componentes/especialistas/especialista
     ContactosComponent,
     RegistroComponent,
 <<<<<<< HEAD
+<<<<<<< HEAD
     TurneroComponent,
     EspecialistasComponent
 =======
     FooterComponent,
     TurneroComponent,
 >>>>>>> 64193b22556119375396c09ca806fded5ec20fbc
+=======
+
+    TurneroComponent,
+    EspecialistasComponent
+
+    FooterComponent,
+    TurneroComponent,
+
+>>>>>>> 5da35eb3bc12e486e135b52c36cfcbc40a08595b
 
   ],
   imports: [
