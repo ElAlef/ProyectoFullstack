@@ -5,7 +5,8 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { TurneroComponent } from './pages/turnero/turnero.component';
- 
+import { EspecialistasComponent } from './componentes/especialistas/especialistas.component';
+
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: "Servicios", component: ServiciosComponent },
   { path: "Contactos", component: ContactosComponent},
   { path: "Registro", component: RegistroComponent},
-  { path: "Turnero", component: TurneroComponent}
+  { path: "Turnero", component: TurneroComponent},
+  { path: "especialistas",component:EspecialistasComponent}
   
 ];
 
