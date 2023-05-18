@@ -12,7 +12,8 @@ import { ContactosComponent } from './pages/contactos/contactos.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { FooterComponent } from './footer/footer.component';
 import { TurneroComponent } from './pages/turnero/turnero.component';
-
+import { HttpClientModule} from '@angular/common/http';
+import { EspecialistasComponent } from './componentes/especialistas/especialistas.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +23,27 @@ import { TurneroComponent } from './pages/turnero/turnero.component';
     ServiciosComponent,
     ContactosComponent,
     RegistroComponent,
+
+    TurneroComponent,
+    EspecialistasComponent
+
     FooterComponent,
     TurneroComponent,
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+=======
+>>>>>>> RamaAlejandro
+=======
+
+>>>>>>> 5da35eb3bc12e486e135b52c36cfcbc40a08595b
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
