@@ -24,7 +24,10 @@ import { TurneroComponent } from './pages/turnero/turnero.component';
     RegistroComponent,
     FooterComponent,
     TurneroComponent,
+<<<<<<< HEAD
 
+=======
+>>>>>>> RamaAlejandro
   ],
   imports: [
     BrowserModule,
