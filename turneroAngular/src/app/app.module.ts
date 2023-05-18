@@ -31,14 +31,6 @@ import { EspecialistasComponent } from './componentes/especialistas/especialista
     EspecialistasComponent,
     FooterComponent,
     TurneroComponent,
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
->>>>>>> RamaAlejandro
-=======
-
->>>>>>> 5da35eb3bc12e486e135b52c36cfcbc40a08595b
   ],
   imports: [
     BrowserModule,
