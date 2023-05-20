@@ -72,4 +72,20 @@ class turnosPorEspecialista(models.Model):
     def __str__(self):
         return self.horarioDeInicio
     
+class Paciente(models.Model):
+    dni_paciente = models.CharField(primary_key=True, max_length=8)
+    nombre = models.CharField(max_length=40, blank=False)
+    apellidos = models.CharField(max_length=60, blank=False)
+    telefono = models.CharField(max_length=20)
+    email = models.EmailField (max_length=50)
+    usuario = models.CharField(max_length=30)
+    password = models.CharField(max_length=30)
     
+    class Meta:
+        db_table = "paciente"
+        verbose_name = "paciente usuario"
+        verbose_name_plural = "pacientes"
+    def __unicode__(self):
+        return self.nombre
+    def __str__(self):
+        return self.nombre
