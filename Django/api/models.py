@@ -34,9 +34,9 @@ class HorarioDeAtencion(models.Model):
     n_dia_uk = models.IntegerField(u'Número de dia de la setmana a UK (0=diumenge)', unique=True) 
     n_dia_ca = models.IntegerField(u'Número de dia de la setmana aquí (0=dilluns)', unique=True) 
     dia_2_lletres = models.CharField("Dia",max_length=6, unique=True)
-    dia_de_la_setmana = models.CharField("Dia de la setmana",max_length=45, unique=True)
-    hora_inici = models.DateTimeField(blank=False) 
-    hora_fi = models.DateTimeField(blank=False)
+    dia_de_la_semana = models.CharField("Dia de la setmana",max_length=45, unique=True)
+    hora_inicio = models.DateTimeField(blank=False) 
+    hora_fin = models.DateTimeField(blank=False)
     id_Especialista = models.ForeignKey(Especialista,to_field="id_Especialista", on_delete=models.CASCADE )
     nom_franja = models.CharField(max_length=45, blank=True) 
 
@@ -46,14 +46,10 @@ class HorarioDeAtencion(models.Model):
         verbose_name_plural = "HorariosDeAtención"
         
     def __unicode__(self):
-        return self.dia_de_la_setmana
-        return self.hora_inici
-        return self.hora_fi
+        return "{} {} {}"(self.dia_de_la_semana, self.hora_inicio, self.hora_fin)
         # return self.nom_franja if unicode(self.nom_franja) else  unicode(self.hora_inici)[0:5] + ' a ' unicode(self.hora_fi)[0:5]
     def __str__(self):
-        return self.dia_de_la_setmana
-        return self.hora_inicio
-        return self.hora_fi
+        return "{} {} {}" (self.dia_de_la_semana, self.hora_inicio, self.hora_fin)
         # return self.hora_inici.strftime("%H:%M")
     
 class turnosPorEspecialista(models.Model):
@@ -68,9 +64,9 @@ class turnosPorEspecialista(models.Model):
         verbose_name = " turnos para Especialista Médico"
         verbose_name_plural = "turnosPorEspecialistas"
     def __unicode__(self):
-        return self.fecha
+        return "{} {}"(self.fecha, self.horarioDeInicio)
     def __str__(self):
-        return self.horarioDeInicio
+        return "{} {}"(self.fecha, self.horarioDeInicio)
     
 class Paciente(models.Model):
     dni_paciente = models.CharField(primary_key=True, max_length=8)
@@ -86,6 +82,6 @@ class Paciente(models.Model):
         verbose_name = "paciente usuario"
         verbose_name_plural = "pacientes"
     def __unicode__(self):
-        return self.nombre
+        return "{} {}" (self.nombre, self.apellidos)
     def __str__(self):
-        return self.nombre
+        return "{} {}" (self.nombre, self.apellidos)
