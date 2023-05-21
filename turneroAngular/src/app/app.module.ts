@@ -10,10 +10,11 @@ import { FormsModule } from '@angular/forms';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 import { TurneroComponent } from './pages/turnero/turnero.component';
 import { HttpClientModule} from '@angular/common/http';
-import { EspecialistasComponent } from './componentes/especialistas/especialistas.component';
+import { EspecialistasComponent } from './pages/turneroweb/especialistas/especialistas.component';
+import { EspecialidadesComponent } from './pages/turneroweb/especialidades/especialidades.component';
 
 @NgModule({
   declarations: [
@@ -23,20 +24,10 @@ import { EspecialistasComponent } from './componentes/especialistas/especialista
     ServiciosComponent,
     ContactosComponent,
     RegistroComponent,
-
-    TurneroComponent,
-    EspecialistasComponent
-
     FooterComponent,
     TurneroComponent,
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
->>>>>>> RamaAlejandro
-=======
-
->>>>>>> 5da35eb3bc12e486e135b52c36cfcbc40a08595b
+    EspecialistasComponent,
+    EspecialidadesComponent, 
   ],
   imports: [
     BrowserModule,

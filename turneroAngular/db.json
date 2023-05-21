@@ -14,6 +14,18 @@
     }
    
   ],
+  "especialidades": [
+    {
+      "nombre": "CLINICA MÉDICA"
+    },
+    {
+      "nombre": "PSIQUIATRÍA"
+    },
+    {
+      "nombre": "CARDIOLOGÍA"
+    }
+  ],
+
   "comments": [
     {
       "id": 1,

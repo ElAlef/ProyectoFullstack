@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { CuentaEspecialistasService } from 'src/app/cuenta-especialistas.service';
+import { CuentaEspecialistasService } from 'src/app/services/cuenta-especialistas.service';
 
 
 @Component({
