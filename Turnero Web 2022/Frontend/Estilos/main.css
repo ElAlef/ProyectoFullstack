@@ -34,6 +34,12 @@
   margin-right: 1rem;
 }
 
+
+.datos-solicitados {
+  color: #fff
+}
+
+
 .header__items:hover {
   -webkit-transition: 1s;
   transition: 1s;
@@ -108,7 +114,7 @@
 
 .footer__copy {
   text-align: center;
-  color: #cfc6c6;
+  color: #ffffff;
   letter-spacing: 1px;
 }
 
@@ -177,12 +183,12 @@
 }
 
 .heroSection__parrafo {
-  width: 300px;
+  width: 275px;
   text-align: center;
-  color: #0ad8ef;
-  background-color: rgba(0, 0, 0, 0.438);
+  color: #6363ba;
+  background-color: rgba(255, 255, 255, 0.438);
   font-size: 1rem;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .Beneficios {
@@ -190,23 +196,23 @@
 }
 
 .Beneficios__cards {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #8e8c98), to(#6363ba));
-  background: linear-gradient(180deg, #8e8c98 80%, #6363ba 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #ffffff,#6363ba));
   padding: 18px;
-  border-radius: 15px;
+  border-radius: 35px;
+  border-color: #6363ba;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .Beneficios__cardsTitle {
-  color: #3944aa;
+  color: #6363ba;
   font-size: 1rem;
   text-align: center;
 }
 
 .Beneficios__cardsText {
-  color: white;
+  color: #4545a1;
   text-align: center;
   font-size: 0.8rem;
 }
@@ -230,7 +236,7 @@
 }
 
 .Nosotros__titulo {
-  color: #0051ff;
+  color: #6363ba;
   font-size: 2rem;
   letter-spacing: 5px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -267,7 +273,7 @@
 .historia {
   margin-bottom: 5rem;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #b8b7be), to(#6363ba));
-  background: linear-gradient(180deg, #b8b7be 80%, #6363ba 100%);
+  background: linear-gradient(180deg, #76eba3 90%, #6363ba 100%);
   padding: 2rem;
   display: inline-block;
   -webkit-box-align: center;
@@ -276,10 +282,10 @@
 }
 
 .historia__titulo {
-  color: #f8f3f3;
+  color: #6363ba;
   font-size: 2rem;
   letter-spacing: 5px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Montserrat", sans-serif;
   text-align: center;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
@@ -316,10 +322,10 @@
 }
 
 .NuestrosServicios__encabezado {
-  color: #0080ff;
+  color: #6363ba;
   font-size: 2rem;
   letter-spacing: 5px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, "Montserrat", sans-serif;
   text-align: center;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
@@ -330,21 +336,19 @@
 }
 
 .NuestrosServicios__cards {
-  background: #5271e3;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(131, 134, 139, 0.986)), to(#72b3e4));
-  background: linear-gradient(180deg, rgba(131, 134, 139, 0.986) 80%, #72b3e4 100%);
+  background: linear-gradient(180deg, #6363ba 35%, #ffffff 100%);
   width: 18rem;
   padding: 10px;
 }
 
 .NuestrosServicios__titulo {
-  color: #8dcaf2;
+  color: #2f2f72;
   font-size: 1.8rem;
   letter-spacing: 1px;
 }
 
 .NuestrosServicios__parrafo {
-  color: #fff9f9;
+  color: #2f2f72;
 }
 
 .contactos {
@@ -369,12 +373,12 @@
   color: white;
   font-size: 3rem;
   letter-spacing: 6px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  -webkit-text-stroke: #0008ff 2.5px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-text-stroke: #6363ba 2.5px;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 .contactos__img {
@@ -383,7 +387,7 @@
 }
 
 .contactos__form {
-  color: #0040ff;
+  color: #6363ba;
   letter-spacing: 1px;
   width: 80%;
   -webkit-box-align: center;
@@ -392,7 +396,7 @@
 }
 
 .contUbicacion {
-  background-color: #a39a9a;
+  background-color: #5353bd;
   margin-top: 4rem;
   padding: 10px;
 }
@@ -595,7 +599,7 @@
 
 .ingresar__link {
   text-decoration: none;
-  color: #2a3deb;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -620,11 +624,11 @@
 }
 
 .boton:hover {
-  background-color: #0051ff;
+  background-color: #6363ba;
 }
 
 .aboton {
-  color: #0051ff;
+  color: #6363ba;
   padding: 8px 15px;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -638,7 +642,7 @@
 }
 
 .boton__form {
-  background-color: #0051ff;
+  background-color: #6363ba;
   border-radius: 12px;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
@@ -659,7 +663,7 @@
 }
 
 .aboton__form:hover {
-  color: #0051ff;
+  color: #6363ba;
 }
 
 .fondo {
@@ -674,15 +678,24 @@
 }
 
 .container {
-  background-color: rgba(124, 194, 244, 0.555);
+  background-color: #6363bad7;
   width: 50%;
   padding: 20px;
 }
 
 .titulo {
-  color: #012a76;
+  color: #fff;
   text-align: center;
 }
+
+.Contra-nueva{
+  color:  #fff;
+}
+
+.contra-confirmar {
+  color: #fff
+}
+
 
 .nav-enlace {
   background: #0c65ea;
@@ -720,7 +733,8 @@ nav {
   width: 100%;
   text-align: center;
   font-size: 30px;
-  color: black;
+  background-color: #2f2f72;
+  color: rgb(255, 255, 255);
   padding: 15px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -735,7 +749,7 @@ nav {
 
 .linkPieRegistro {
   text-decoration: none;
-  color: #0800ff;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -752,7 +766,7 @@ nav {
 
 .linkVolver {
   text-decoration: none;
-  color: #0800ff;
+  color: #43439b;
   font-weight: 600;
 }
 
