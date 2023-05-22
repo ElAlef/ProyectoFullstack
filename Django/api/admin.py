@@ -12,7 +12,7 @@ class EspecialidadAdmin(admin.ModelAdmin):
 class EspecialistaAdmin(admin.ModelAdmin):
     list_display = ("nombre", "id_Especialidad")
 class HorarioDeAtencionAdmin(admin.ModelAdmin):
-    list_display = ("dia_de_la_setmana", "hora_inici", "hora_fi")
+    list_display = ("dia_de_la_semana", "hora_inicio", "hora_fin")
 class turnosPorEspecialistaAdmin(admin.ModelAdmin):
     list_display = ("fecha","horarioDeInicio","horarioDeFin","id_Horario")
 class PacienteAdmin(admin.ModelAdmin):

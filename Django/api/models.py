@@ -8,7 +8,7 @@ class Especialidad(models.Model):
 
     class Meta:
         db_table = "especialidad"
-        verbose_name = "Especialidad Médica"
+        verbose_name = "EspecialidadMédica"
         verbose_name_plural = "Especialidades"
     def __unicode__(self):
         return self.nombre
@@ -22,7 +22,7 @@ class Especialista(models.Model):
 
     class Meta:
         db_table = "especialista"
-        verbose_name = "Especialista Médico"
+        verbose_name = "EspecialistaMédico"
         verbose_name_plural = "Especialistas"
     def __unicode__(self):
         return self.nombre
@@ -31,10 +31,10 @@ class Especialista(models.Model):
 
 class HorarioDeAtencion(models.Model):
     id_Horario = models.AutoField(primary_key=True)
-    n_dia_uk = models.IntegerField(u'Número de dia de la setmana a UK (0=diumenge)', unique=True) 
-    n_dia_ca = models.IntegerField(u'Número de dia de la setmana aquí (0=dilluns)', unique=True) 
+    n_dia_uk = models.IntegerField('Número de dia de la semana a UK (0=diumenge)', unique=True) 
+    n_dia_ca = models.IntegerField('Número de dia de la semana aquí (0=dilluns)', unique=True) 
     dia_2_lletres = models.CharField("Dia",max_length=6, unique=True)
-    dia_de_la_semana = models.CharField("Dia de la setmana",max_length=45, unique=True)
+    dia_de_la_semana = models.CharField("Dia de la semana",max_length=45, unique=True)
     hora_inicio = models.DateTimeField(blank=False) 
     hora_fin = models.DateTimeField(blank=False)
     id_Especialista = models.ForeignKey(Especialista,to_field="id_Especialista", on_delete=models.CASCADE )
@@ -42,7 +42,7 @@ class HorarioDeAtencion(models.Model):
 
     class Meta:
         db_table = "HorarioDeAtencion"
-        verbose_name = " horarios semanales por cada especialista"
+        verbose_name = " horariosSemanalesPorCadaEspecialista"
         verbose_name_plural = "HorariosDeAtención"
         
     def __unicode__(self):
@@ -61,7 +61,7 @@ class turnosPorEspecialista(models.Model):
 
     class Meta:
         db_table = "turnosPorEspecialista"
-        verbose_name = " turnos para Especialista Médico"
+        verbose_name = " turnosParaEspecialistaMédico"
         verbose_name_plural = "turnosPorEspecialistas"
     def __unicode__(self):
         return "{} {}"(self.fecha, self.horarioDeInicio)

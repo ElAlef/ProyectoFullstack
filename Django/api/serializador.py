@@ -1,2 +1,2 @@
-from rest_framework import serializador
+#from rest_framework import serializador
 
