@@ -60,7 +60,7 @@ class turnosPorEspecialista(models.Model):
         verbose_name = " turnos para Especialista Médico"
         verbose_name_plural = "turnosPorEspecialistas"
     def __unicode__(self):
-        return "{} {}"(self.fecha, self.horarioDeInicio)
+        return self.fecha
     def __str__(self):
         return self.fecha
     
@@ -78,6 +78,6 @@ class Paciente(models.Model):
         verbose_name = "paciente usuario"
         verbose_name_plural = "pacientes"
     def __unicode__(self):
-        return "{} {}" (self.nombre, self.apellidos)
+        return self.nombre
     def __str__(self):
-        return "{} {}" (self.nombre, self.apellidos)
+        return self.nombre
