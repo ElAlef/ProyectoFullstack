@@ -8,15 +8,15 @@ from .models import Paciente
 # Register your models here.
 
 class EspecialidadAdmin(admin.ModelAdmin):
-    display = ("nombre")
+    display = ('nombre')
 class EspecialistaAdmin(admin.ModelAdmin):
-    list_display = ("nombre", "id_Especialidad")
+    list_display = ('nombre', 'id_Especialidad')
 class HorarioDeAtencionAdmin(admin.ModelAdmin):
-    list_display = ("dia_de_la_setmana", "hora_inici", "hora_fi")
+    list_display = ('dia_de_la_semana', 'hora_inici', 'hora_fi', 'id_Especialista')
 class turnosPorEspecialistaAdmin(admin.ModelAdmin):
-    list_display = ("fecha","horarioDeInicio","horarioDeFin","id_Horario")
+    list_display = ('fecha','horarioDeInicio','horarioDeFin','id_Horario')
 class PacienteAdmin(admin.ModelAdmin):
-    list_display = ("dni_paciente","nombre", "apellidos","telefono","email")
+    list_display = ('dni_paciente','nombre', 'apellidos','telefono','email')
 
 
 admin.site.register(Especialidad, EspecialidadAdmin)
