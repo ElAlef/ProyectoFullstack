@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 
 # Create your models here.
 
@@ -81,3 +82,34 @@ class Paciente(models.Model):
         return self.nombre
     def __str__(self):
         return self.nombre
+
+class ReservaDeTurno(models.Model):
+    id_Reserva = models.AutoField(primary_key=True)
+    dni_paciente = models.ForeignKey(Paciente,to_field='dni_paciente', on_delete=models.CASCADE )
+    id_Turnos = models.ForeignKey(turnosPorEspecialista,to_field='id_Turnos', on_delete=models.CASCADE )
+
+    class Meta:
+        db_table = "reservaDeTurno"
+        verbose_name = " Turnos reservados por pacientes"
+        verbose_name_plural = "ReservasDeTurnos"
+    def __unicode__(self):
+        return self.id_Reserva
+    def __str__(self):
+        return self.id_Reserva
+
+class Pago(models.Model):
+    id_pago = models.AutoField(primary_key=True)
+    monto = models.IntegerField()
+    fecha = models.DateField(default = datetime.now)
+    hora = models.TimeField(default = datetime.now)
+    id_Reserva = models.ForeignKey(ReservaDeTurno,to_field='id_Reserva', on_delete=models.CASCADE )
+
+
+    class Meta:
+        db_table = "pago"
+        verbose_name = " Pago de turns reservado por paciente"
+        verbose_name_plural = "PagosDeTurnos"
+    def __unicode__(self):
+        return self.monto
+    def __str__(self):
+        return self.monto
