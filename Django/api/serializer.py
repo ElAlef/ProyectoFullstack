@@ -5,5 +5,4 @@ class EspecialidadSerializer(serializers.ModelSerializer):
  class Meta:
   model= Especialidad
   fields='__all__'
-  #fields=('nombre','observacion')
 
