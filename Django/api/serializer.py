@@ -4,5 +4,5 @@ from .models import Especialidad
 class EspecialidadSerializer(serializers.ModelSerializer):
     class Meta:
         model= Especialidad
-        fields=('nombre')
+        fields='__all__'
 
