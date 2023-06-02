@@ -1,10 +1,9 @@
 from django.urls import path, include
 from rest_framework import routers
-#from Aula.views import EspecialidadViewSet
-from turneroWeb  import views
+from api import views
 
 router= routers.DefaultRouter()
-router.register(r'Especialidad',views.AulaViewSet)
+router.register(r'Especialidad',views.EspecialidadViewSet)
 #----
 urlpatterns = [
      path('', include(router.urls)),
