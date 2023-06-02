@@ -32,17 +32,11 @@ class Especialista(models.Model):
 
 class HorarioDeAtencion(models.Model):
     id_Horario = models.AutoField(primary_key=True)
-<<<<<<< HEAD
+
     dia_de_la_semana = models.CharField('Dia de la semana',max_length=45)
     hora_inici = models.DateTimeField(blank=False) 
     hora_fi = models.DateTimeField(blank=False)
     id_Especialista = models.ForeignKey(Especialista,to_field='id_Especialista', on_delete=models.CASCADE )
-=======
-    dia_de_la_semana = models.CharField("Dia de la setmana",max_length=45)
-    hora_inici = models.DateTimeField(blank=False) 
-    hora_fi = models.DateTimeField(blank=False)
-    id_Especialista = models.ForeignKey(Especialista,to_field="id_Especialista", on_delete=models.CASCADE )
->>>>>>> RamaAlejandro
 
     class Meta:
         db_table = "HorarioDeAtencion"
@@ -87,9 +81,6 @@ class Paciente(models.Model):
         verbose_name_plural = "pacientes"
     def __unicode__(self):
         return self.nombre
-<<<<<<< HEAD
-    def __str__(self):
-        return self.nombre
 
 class ReservaDeTurno(models.Model):
     id_Reserva = models.AutoField(primary_key=True)
@@ -121,7 +112,3 @@ class Pago(models.Model):
         return self.monto
     def __str__(self):
         return self.monto
-=======
-    def __str__(self):
-        return self.nombre
->>>>>>> RamaAlejandro
