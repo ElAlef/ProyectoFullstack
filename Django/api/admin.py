@@ -4,6 +4,8 @@ from .models import turnosPorEspecialista
 from .models import HorarioDeAtencion
 from .models import Especialidad
 from .models import Paciente
+from .models import ReservaDeTurno
+from .models import Pago
 
 # Register your models here.
 
@@ -17,6 +19,10 @@ class turnosPorEspecialistaAdmin(admin.ModelAdmin):
     list_display = ('fecha','horarioDeInicio','horarioDeFin','id_Horario')
 class PacienteAdmin(admin.ModelAdmin):
     list_display = ('dni_paciente','nombre', 'apellidos','telefono','email')
+class ReservaDeTurnoAdmin(admin.ModelAdmin):
+    list_display = ('dni_paciente','id_Turnos')
+class PagoAdmin(admin.ModelAdmin):
+    list_display = ('monto','fecha','hora','id_Reserva')
 
 
 admin.site.register(Especialidad, EspecialidadAdmin)
@@ -24,3 +30,5 @@ admin.site.register(Especialista, EspecialistaAdmin)
 admin.site.register(HorarioDeAtencion, HorarioDeAtencionAdmin)
 admin.site.register(turnosPorEspecialista, turnosPorEspecialistaAdmin)
 admin.site.register(Paciente, PacienteAdmin)
+admin.site.register(ReservaDeTurno, ReservaDeTurnoAdmin)
+admin.site.register(Pago, PagoAdmin)
