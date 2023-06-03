@@ -21,7 +21,6 @@ class EspecialistaSerializer(serializers.ModelSerializer):
         #fields='__all__'
         fields=('nombre')
 
-
 class HorarioDeAtencionSerializer(serializers.ModelSerializer):
     class Meta:
         model= HorarioDeAtencion
