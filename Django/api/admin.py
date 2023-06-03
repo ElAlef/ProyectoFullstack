@@ -19,10 +19,12 @@ class turnosPorEspecialistaAdmin(admin.ModelAdmin):
     list_display = ('fecha','horarioDeInicio','horarioDeFin','id_Horario')
 class PacienteAdmin(admin.ModelAdmin):
     list_display = ('dni_paciente','nombre', 'apellidos','telefono','email')
+
 class ReservaDeTurnoAdmin(admin.ModelAdmin):
     list_display = ('dni_paciente','id_Turnos')
 class PagoAdmin(admin.ModelAdmin):
     list_display = ('monto','fecha','hora','id_Reserva')
+
 
 
 admin.site.register(Especialidad, EspecialidadAdmin)
