@@ -18,7 +18,7 @@ from .models import turnosPorEspecialista
 from .serializer import PacienteSerializer
 from .models import Paciente
 
-from .serializer import RevervaDeTurnoSerializer
+from .serializer import ReservaDeTurnoSerializer
 from .models import ReservaDeTurno
 
 from .serializer import PagoSerializer
@@ -41,12 +41,12 @@ class turnoPorEspecialistaViewSet(viewsets.ModelViewSet):
 
 class PacienteViewSet (viewsets.ModelViewSet):
     queryset=Paciente.objects.all()
-    serializer_class= Paciente 
+    serializer_class= PacienteSerializer 
 
 class ReservaDeTurnoViewSet(viewsets.ModelViewSet):
     queryset=ReservaDeTurno.objects.all()
-    serializer_class=ReservaDeTurno
+    serializer_class=ReservaDeTurnoSerializer
 
 class PagoViewSet(viewsets.ModelViewSet):
     queryset=Pago.objects.all()
-    serializer_class=Pago
+    serializer_class=PagoSerializer
