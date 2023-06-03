@@ -32,8 +32,7 @@ class Especialista(models.Model):
 
 class HorarioDeAtencion(models.Model):
     id_Horario = models.AutoField(primary_key=True)
-
-    dia_de_la_semana = models.CharField('Dia de la semana',max_length=45)
+    dia_de_la_semana = models.CharField("Dia de la semana",max_length=45)
     hora_inici = models.DateTimeField(blank=False) 
     hora_fi = models.DateTimeField(blank=False)
     id_Especialista = models.ForeignKey(Especialista,to_field='id_Especialista', on_delete=models.CASCADE )
