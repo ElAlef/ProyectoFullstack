@@ -9,14 +9,6 @@ router.register(r'Especialidad',views.EspecialidadViewSet)
 router.register(r'Especialista',views.EspecialistaViewSet)
 router.register(r'HorarioDeAtencion',views.HorarioDeAtencionViewSet)
 router.register(r'turnosPorEspecialista',views.turnoPorEspecialistaViewSet)
-
-#from Especilaidad.views import EspecialidadViewSet
-from turneroWeb  import views
-
-router= routers.DefaultRouter()
-router.register(r'Especialidad',views.EspecialidadViewSet)
-
-#----
-urlpatterns = [
-     path('', include(router.urls)),
-]
+router.register(r'Paciente',views.PacienteViewSet)
+router.register(r'ReservaDeTurno',views.ReservaDeTurnoViewSet)
+router.register(r'Pago',views.PagoViewSet)
