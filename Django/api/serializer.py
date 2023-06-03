@@ -4,7 +4,7 @@ from .models import Especialidad
 from .models import Especialista
 from .models import HorarioDeAtencion
 from .models import turnosPorEspecialista
-#from .models import Paciente
+from .models import Paciente
 
 class EspecialidadSerializer(serializers.ModelSerializer):
     class Meta:
@@ -22,16 +22,14 @@ class EspecialistaSerializer(serializers.ModelSerializer):
 class HorarioDeAtencionSerializer(serializers.ModelSerializer):
     class Meta:
         model= HorarioDeAtencion
-        fields='dia_de_la_semana'
+        fields=('dia_de_la_semana')
 
 class turnosPorEspecialistaSerializer(serializers.ModelSerializer):
     class Meta:
         model= turnosPorEspecialista
-        fields='fecha' 
+        fields=('fecha') 
 
-"""
 class PacienteSerializer(serializers.ModelSerializer):
     class Meta:
         model= Paciente
-        fields='nombre'
-"""        
+        fields=('nombre')
