@@ -23,5 +23,9 @@ urlpatterns = [
     path('api/Especialidad', include('api.urls')),
     path('api/HorarioDeAtencion', include('api.urls')),
     path('api/turnosPorEspecialista', include('api.urls')),
+    path('api/ReservaDeTurno', include('api.urls')),
+    path('api/Pago', include('api.urls')),
+
+
 
 ]
