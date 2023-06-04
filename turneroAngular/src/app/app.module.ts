@@ -1,33 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './componentes/header/header.component';
-import { LoginComponent } from './componentes/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { ServiciosComponent } from './pages/servicios/servicios.component';
-import { ContactosComponent } from './pages/contactos/contactos.component';
-import { RegistroComponent } from './componentes/registro/registro.component';
-import { FooterComponent } from './componentes/footer/footer.component';
-import { TurneroComponent } from './pages/turnero/turnero.component';
+import { SharedModule } from './shared/shared.module';
+import { PagesModule } from './pages/pages.module';
+import { AuthModule } from './auth/auth.module';
 import { HttpClientModule} from '@angular/common/http';
-import { EspecialistasComponent } from './pages/turneroweb/especialistas/especialistas.component';
-import { EspecialidadesComponent } from './pages/turneroweb/especialidades/especialidades.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    LoginComponent,
-    ServiciosComponent,
-    ContactosComponent,
-    RegistroComponent,
-    FooterComponent,
-    TurneroComponent,
-    EspecialistasComponent,
-    EspecialidadesComponent, 
   ],
   imports: [
     BrowserModule,
@@ -35,6 +20,10 @@ import { EspecialidadesComponent } from './pages/turneroweb/especialidades/espec
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    SharedModule,
+    PagesModule,
+    AuthModule,
+    DashboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
