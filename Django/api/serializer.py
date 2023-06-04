@@ -12,36 +12,36 @@ class EspecialidadSerializer(serializers.ModelSerializer):
 
     class Meta:
         model= Especialidad
-        #fields='__all__'
-        fields=('nombre')
+        fields='__all__'
+        # fields=('nombre')
 
 class EspecialistaSerializer(serializers.ModelSerializer):
     class Meta:
         model= Especialista
-        #fields='__all__'
-        fields=('nombre')
+        fields='__all__'
+        # fields=('nombre')
 
 class HorarioDeAtencionSerializer(serializers.ModelSerializer):
     class Meta:
         model= HorarioDeAtencion
-        fields=('dia_de_la_semana')
+        fields='__all__'
 
 class turnosPorEspecialistaSerializer(serializers.ModelSerializer):
     class Meta:
         model= turnosPorEspecialista
-        fields=('fecha') 
+        fields='__all__' 
 
 class PacienteSerializer(serializers.ModelSerializer):
     class Meta:
         model= Paciente
-        fields=('nombre')
+        fields='__all__'
 
 class RevervaDeTurnoSerializer(serializers.ModelSerializer):
     class Meta:
         model= ReservaDeTurno
-        fields=('id_Reserva')
+        fields='__all__'
 
 class PagoSerializer(serializers.ModelSerializer):
     class Meta:
         model= Pago
-        fields=('monto')                
+        fields='__all__'              
