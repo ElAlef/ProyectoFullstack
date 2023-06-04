@@ -16,14 +16,28 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from rest_framework import routers
+
+from api import views as vistas
+
+router = routers.DefaultRouter()
+router.register('Especilaista', vistas.verEspecialista, basename='Especialista')
+router.register('Especilaidad', vistas.verEspecialidad, basename='Especialidad')
+router.register('HorarioDeAtencion', vistas.verHorarioDeAtencion, basename='HorarioDeAtencion')
+router.register('turnosPorEspecilaista', vistas.verturnosPorEpecialista, basename='turnosPorEspecialista')
+router.register('ReservaDeTurno', vistas.verReservaDeTurno, basename='ReservaDeTurno')
+router.register('Pago', vistas.verPago, basename='Pago')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1', include('api.urls')),
+    path('api/', include(router.urls)),
+]
+
     # path('api/Especialista', include('api.urls')),
     # path('api/Especialidad', include('api.urls')),
     # path('api/HorarioDeAtencion', include('api.urls')),
     # path('api/turnosPorEspecialista', include('api.urls')),
     # path('api/ReservaDeTurno', include('api.urls')),
     # path('api/Pago', include('api.urls')),
-]
