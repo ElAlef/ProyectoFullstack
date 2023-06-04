@@ -36,4 +36,4 @@ class turnoPorEspecialistaViewSet(viewsets.ModelViewSet):
 
 class PacienteViewSet(viewsets.ModelViewSet):
     queryset=Paciente.objects.all()
-    serializer_class= Paciente    
+    serializer_class= PacienteSerializer    

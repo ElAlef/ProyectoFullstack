@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'turneroWeb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'turneroweb1',
+        'NAME': 'turneroweb2',
         'HOST':'localhost',
         'PORT': '3306',
         'USER': 'root',
