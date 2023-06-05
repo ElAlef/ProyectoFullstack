@@ -1,0 +1,49 @@
+
+    <form [formGroup]="form" class="custom-form" method="post" (ngSubmit)="onEnviar($event)" >
+      <div class="login">
+      <h1>Iniciar Sesión</h1>
+      <input
+        type="email" 
+        formControlName="mail"
+        name="email"
+        placeholder="Email"
+        required="required"
+      />
+        <div *ngIf="Mail?.errors && Mail?.touched">
+          <p *ngIf="Mail?.hasError('required')" class="text-danger">
+            El email es requerido
+          </p>
+          <p *ngIf="Mail?.hasError('email')" class="text-danger">
+            El formato del email debe ser válido
+          </p>
+        </div>
+      </div>
+
+      <div class="login">
+      <input
+        type="password"
+        formControlName="password"
+        name="password"
+        placeholder="Password"
+        required="required"
+      />
+      <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasError('required')" class="text-danger">
+          El Password es requerido
+        </p>
+        <p *ngIf="Password?.hasError('minlength')" class="text-danger">
+          El Password debe tener como minimo 8 caracteres
+        </p>
+      </div>
+
+
+      </div>
+
+      <div>
+        <button type="submit" class="btn btn-success">Iniciar Sesion</button>
+      </div>
+      
+      <P>¿No tiene cuenta?</P>
+      <a routerLink="../Registro">Regístrate</a>
+      
+    </form>

@@ -1,0 +1,104 @@
+
+
+.fondo {
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 30%;
+    display: inline;
+    padding: 30px;
+  }
+  
+  .container {
+    background-color: rgba(124, 194, 244, 0.555);
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .titulo {
+    color: #012a76;
+    text-align: center;
+  }
+  
+  .nav-enlace {
+    background: #0c65ea;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .nav-enlace:hover {
+    background: #f7f2f2;
+  }
+  
+  nav {
+    background: gray;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .nav-boton {
+    background: rgba(0, 0, 255, 0.753);
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+  }
+  
+  .botonRegistrarse {
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .ParrafoPieRegistro {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .linkPieRegistro {
+    text-decoration: none;
+    color: #0800ff;
+    font-weight: 600;
+  }
+  
+  .linkPieRegistro:hover {
+    color: black;
+  }
+  
+  .ParrafoVolver {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+  
+  .linkVolver {
+    text-decoration: none;
+    color: #0800ff;
+    font-weight: 600;
+  }
+  
+  .linkVolver:hover {
+    color: white;
+  }
+  .ng-valid:not(form).ng-touched{
+    border-left:5px solid #42a948;
+  }
+  .ng-invalid:not(form).ng-touched {
+    border-left: 5px solid #a94442;
+  }
