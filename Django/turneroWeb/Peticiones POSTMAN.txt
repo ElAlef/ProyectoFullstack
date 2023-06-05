@@ -1,0 +1,19 @@
+LOGIN - POST http://localhost:8000/api/auth/login/
+
+{"email": " ", "turneroweb": " " } // admin
+{"email": "usuarioNOADMIN@nosoyadmin.com", "password": "zaraza123456"} // usuario
+
+Con Postman, HEADER: X-CSRFToken  y usamos el token que nos da el metodo GET.
+Tambien podemos enviarlo en el body con csrfmiddlewaretoken
+
+
+LOGOUT - POST http://localhost:8000/api/auth/logout/
+
+Especialista - GET http://127.0.0.1:8000/api/Especialista/
+Especialidad - GET http://127.0.0.1:8000/api/Especialista/
+HorarioDeAtencion - GET http://127.0.0.1:8000/api/HorarioDeAtencion/
+turnosPorEspecialista - GET http://127.0.0.1:8000/api/turnosPorEspecialista/
+ReservaDeTurno - GET http://127.0.0.1:8000/api/ReservaDeTurno/
+Pago - GET http://127.0.0.1:8000/api/Pago/
+
+PERFIL - GET y Patch http://127.0.0.1:8000/api/user/profile/
