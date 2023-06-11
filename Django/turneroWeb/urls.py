@@ -20,19 +20,19 @@ from rest_framework import routers
 
 from api import views as vistas
 
-router = routers.DefaultRouter()
-router.register('Especilaista', vistas.verEspecialista, basename='Especialista')
-router.register('Especilaidad', vistas.verEspecialidad, basename='Especialidad')
-router.register('HorarioDeAtencion', vistas.verHorarioDeAtencion, basename='HorarioDeAtencion')
-router.register('turnosPorEspecilaista', vistas.verturnosPorEpecialista, basename='turnosPorEspecialista')
-router.register('ReservaDeTurno', vistas.verReservaDeTurno, basename='ReservaDeTurno')
-router.register('Pago', vistas.verPago, basename='Pago')
+# router = routers.DefaultRouter()
+# router.register('Especilaista', vistas.Especialista, basename='Especialista')
+# router.register('Especilaidad', vistas.Especialidad, basename='Especialidad')
+# router.register('HorarioDeAtencion', vistas.HorarioDeAtencion, basename='HorarioDeAtencion')
+# router.register('turnosPorEspecilaista', vistas.turnosPorEspecialista, basename='turnosPorEspecialista')
+# router.register('ReservaDeTurno', vistas.ReservaDeTurno, basename='ReservaDeTurno')
+# router.register('Pago', vistas.Pago, basename='Pago')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1', include('api.urls')),
-    path('api/', include(router.urls)),
+    # path('api/', include(router.urls)),
 ]
 
     # path('api/Especialista', include('api.urls')),
