@@ -1,49 +1,54 @@
 
-    <form [formGroup]="form" class="custom-form" method="post" (ngSubmit)="onEnviar($event)" >
+    <form [formGroup]="loginForm" class="custom-form"   >
+      <p class="text-danger">{{loginError}}</p>
       <div class="login">
       <h1>Iniciar Sesión</h1>
       <input
-        type="email" 
-        formControlName="mail"
-        name="email"
+        formControlName="email"
+        type="email"
         placeholder="Email"
         required="required"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
       />
-        <div *ngIf="Mail?.errors && Mail?.touched">
-          <p *ngIf="Mail?.hasError('required')" class="text-danger">
-            El email es requerido
-          </p>
-          <p *ngIf="Mail?.hasError('email')" class="text-danger">
-            El formato del email debe ser válido
-          </p>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)"
+         class="text-danger">
+  
+        <div *ngIf="email.errors?.['required']">
+         El Email es requerido.
         </div>
+        <div *ngIf="email.errors?.['email']">
+         El Email debe tener un formato válido.
+        </div>
+      </div>
+
       </div>
 
       <div class="login">
       <input
-        type="password"
         formControlName="password"
-        name="password"
+        type="password"
         placeholder="Password"
         required="required"
+        id="exampleInputPassword1"
       />
-      <div *ngIf="Password?.errors && Password?.touched">
-        <p *ngIf="Password?.hasError('required')" class="text-danger">
-          El Password es requerido
-        </p>
-        <p *ngIf="Password?.hasError('minlength')" class="text-danger">
-          El Password debe tener como minimo 8 caracteres
-        </p>
+
+      <div *ngIf="password.invalid && (password.dirty || password.touched)"
+         class="text-danger">
+  
+        <div *ngIf="password.errors?.['required']">
+         El password es requerido.
+        </div>
+        
+      </div>
+   
       </div>
 
-
-      </div>
-
-      <div>
-        <button type="submit" class="btn btn-success">Iniciar Sesion</button>
-      </div>
       
-      <P>¿No tiene cuenta?</P>
-      <a routerLink="../Registro">Regístrate</a>
-      
+        <button type="submit" (click)="login()" class="btn btn-success">Iniciar Sesion</button>
     </form>
+
+<div>
+  <P>¿No tiene cuenta?</P>
+      <a routerLink="../Registro">Regístrate</a>
+</div>
