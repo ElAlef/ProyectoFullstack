@@ -18,9 +18,9 @@ from django.contrib import admin
 from django.urls import path,include
 from rest_framework import routers
 
-from api import views as vistas
 
-# router = routers.DefaultRouter()
+
+router = routers.DefaultRouter()
 # router.register('Especilaista', vistas.Especialista, basename='Especialista')
 # router.register('Especilaidad', vistas.Especialidad, basename='Especialidad')
 # router.register('HorarioDeAtencion', vistas.HorarioDeAtencion, basename='HorarioDeAtencion')
@@ -32,7 +32,7 @@ from api import views as vistas
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1', include('api.urls')),
-    # path('api/', include(router.urls)),
+    path('api/', include(router.urls)),
 ]
 
     # path('api/Especialista', include('api.urls')),
