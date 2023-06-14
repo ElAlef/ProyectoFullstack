@@ -3,10 +3,10 @@ from django.contrib.auth import authenticate, login, logout
 from rest_framework import status, generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .serializer import UserSerializer
-from .models import Especialidad, Especialista, HorarioDeAtencion, turnosPorEspecialista, Paciente, ReservaDeTurno, Pago, CustomUser
+from .serializers import UserSerializer
 from rest_framework.permissions import IsAdminUser, AllowAny, IsAuthenticated
-
+from .models import CustomUser
+# Create your views here.
 
 class LoginView(APIView):
     permission_classes = [AllowAny] 
@@ -34,11 +34,10 @@ class LogoutView(APIView):
 
         # Devolvemos la respuesta al cliente
         return Response(status=status.HTTP_200_OK)
-    
+
 class SignupView(generics.CreateAPIView):
     permission_classes = [AllowAny] 
     serializer_class = UserSerializer
-
 
 class ProfileView(generics.RetrieveUpdateAPIView):
     permission_classes = [IsAuthenticated] #Solo usuarios logueados pueden ver.
