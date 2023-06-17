@@ -12,7 +12,7 @@ class UserSerializer(serializers.ModelSerializer):
     username = serializers.CharField(
         required=True)
     password = serializers.CharField(
-        min_length=8)
+        min_length=8, required=True)
 
     class Meta:
         model = get_user_model()
