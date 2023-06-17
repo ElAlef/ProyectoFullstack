@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Vero\Desktop\ProyectoFullstack-1\backend2023\TurneroWeb"
+VIRTUAL_ENV="C:\Users\Asus\Desktop\ProyectoFullStack2023\ProyectoFullstack\backend2023\TurneroWeb"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
