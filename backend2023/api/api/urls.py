@@ -19,8 +19,10 @@ from django.urls import path, include
 from rest_framework import routers
 
 
+
 # Api router
 router = routers.DefaultRouter()
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

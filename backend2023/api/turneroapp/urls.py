@@ -1,6 +1,6 @@
 from django import urls
 from django.urls import path, include, re_path
-from .views import LoginView, LogoutView, SignupView, ProfileView, ListarUsuarios
+from .views import LoginView, LogoutView, SignupView, ProfileView, ListarUsuarios, agregarEspecialidad, verEspecialidad
 
 urlpatterns = [
     path('auth/login/',
@@ -17,4 +17,8 @@ urlpatterns = [
          ProfileView.as_view(), name='user_profile'),
     path('usuarios/',
          ListarUsuarios.as_view(), name='listar_usuarios'),
+    path('agregarespecialidad/',
+         agregarEspecialidad.as_view(), name='agregar_especialidad'),
+    path('especialidades/',
+         verEspecialidad.as_view(), name='ver_especialidades'),
 ]
