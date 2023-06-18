@@ -67,9 +67,9 @@ private baseUrl: string = "http://localhost:8000/";
 
 
         const url = `${ this.baseUrl}/login`;
-        const body = { username , password };
+        const body = { "email":username , "password":password };
 
-       return this.http.post<LoginResponse>(url, body).subscribe(resp => {
+       return this.http.post<LoginResponse>("http://localhost:8000/auth/login/", body).subscribe(resp => {
 
         localStorage.setItem('token', 'Bearer '+resp.token)
         localStorage.setItem('username', resp.username)
