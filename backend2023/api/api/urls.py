@@ -29,4 +29,11 @@ urlpatterns = [
      # Api routes
     path('api/', include('turneroapp.urls')),
     path('api/', include(router.urls)),
+
+    path('api/Especialista', include('api.urls')),
+    path('api/Especialidad', include('api.urls')),
+    path('api/HorarioDeAtencion', include('api.urls')),
+    path('api/turnosPorEspecialista', include('api.urls')),
+    path('api/ReservaDeTurno', include('api.urls')),
+    path('api/Pago', include('api.urls')),
 ]
