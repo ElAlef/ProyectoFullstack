@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%d#5#ziuk!)qhoh3lp#e^!)ixp8q(^vl2u8kvx20^y@mn6rnqw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [] #'192.168.1.1','127.0.0.1'
 
 
 # Application definition
@@ -39,8 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'knox',
+    'django_rest_passwordreset',
     'api',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -92,7 +95,7 @@ DATABASES = {
         'PASSWORD': '',
         'OPTIONS': {
             'sql_mode': 'traditional',
-            }
+            },
     }
 }
 
@@ -137,3 +140,23 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Custom user model
+AUTH_USER_MODEL = "api.CustomUser"
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.IsAdminUser',
+        'rest_framework.permissions.AllowAny',
+    ]
+  
+}
+
+CORS_ORIGIN_WHITELIST = ["htto://localhost:4200"]
+CORS_ALLOW_CREDENTIALS = True

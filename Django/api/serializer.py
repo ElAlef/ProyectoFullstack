@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django.contrib.auth import get_user_model
 
 from .models import Especialidad
 from .models import Especialista
@@ -7,7 +8,22 @@ from .models import turnosPorEspecialista
 from .models import Paciente
 from .models import ReservaDeTurno
 from .models import Pago
+from django.contrib.auth.hashers import make_password
 
+class UserSerializer(serializers.ModelSerializer):
+    email = serializers.EmailField(required=True)
+    nombre = serializers.CharField()
+    apellido = serializers.CharField()
+    fechaNacimiento = serializers.CharField()
+    dni = serializers.CharField()
+    username = serializers.CharField(required=True)
+    password = serializers.CharField(min_length=8)
+    
+    class Meta:
+        model = get_user_model()
+        fields = ('email', 'username', 'password')
+    def validate_password(self, value):
+        return make_password(value)   
 class EspecialidadSerializer(serializers.ModelSerializer):
 
     class Meta:

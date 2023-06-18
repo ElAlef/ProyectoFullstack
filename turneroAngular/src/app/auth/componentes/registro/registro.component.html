@@ -10,17 +10,19 @@
       <a href="#" class="nav-enlace desaparece">Inicio</a> -->
       <p></p>
       <p></p>
-      <form id="formulario" novalidate [formGroup]="form" class="custom-form" method="post" (ngSubmit)="onEnviar($event)">
+      <form   [formGroup]="form" class="custom-form"  (ngSubmit)="registro()">
 
         <div>
           <input 
-          
+          id="nombre"
           class="form-control mb-2"  
           type="text" 
-          formControlName="Nombre"
-          name="Nombre"
+          formControlName="nombre"
+          
+          name="nombre"
           placeholder="Nombre"
-          required="required">
+          required="required"
+          >
 
           <div *ngIf="Nombre?.errors && Nombre?.touched">
             <p *ngIf="Nombre?.hasError('required')" class="text-danger">
@@ -34,12 +36,15 @@
         
         <div>
           <input 
+          id="apellido"
           class="form-control mb-2"  
           type="text" 
-          formControlName="Apellido"
-          name="Apellido"
+          formControlName="apellido"
+         
+          name="apellido"
           placeholder="Apellidos"
-          required="required">
+          required="required"
+          >
 
           <div *ngIf="Apellido?.errors && Apellido?.touched">
             <p *ngIf="Apellido?.hasError('required')" class="text-danger">
@@ -53,12 +58,15 @@
 
         <div>
           <input 
+          id="dni"
           class="form-control mb-2"  
           type="text" 
-          formControlName="Dni"
-          name="Dni"
+          formControlName="dni"
+         
+          name="dni"
           placeholder="DNI"
-          required="required">
+          required="required"
+          >
 
           <div *ngIf="Dni?.errors && Dni?.touched">
             <p *ngIf="Dni?.hasError('required')" class="text-danger">
@@ -72,19 +80,22 @@
   
         <div>
           <input 
+          id="fecha_nacimiento"
           class="form-control mb-2"  
-          type="text" 
-          formControlName="Telefono"
-          name="Telefono"
-          placeholder="Telefono"
-          required="required">
+          type="date" 
+          formControlName="fechaNacimiento"
+        
+          name="fechaNacimiento"
+          placeholder="fechaNacimiento"
+          required="required"
+          >
 
-          <div *ngIf="Telefono?.errors && Telefono?.touched">
-            <p *ngIf="Telefono?.hasError('required')" class="text-danger">
-              El Telefono es requerido
+          <div *ngIf="FechaNacimiento?.errors && FechaNacimiento?.touched">
+            <p *ngIf="FechaNacimiento?.hasError('required')" class="text-danger">
+              El fechaNacimiento es requerido
             </p>
-            <p *ngIf="Telefono?.hasError('minlength')" class="text-danger">
-              El Telefono debe tener al menos 8 digitos
+            <p *ngIf="FechaNacimiento?.hasError('minlength')" class="text-danger">
+              El fechaNacimiento debe tener al menos 8 digitos
             </p>
           </div>
         </div>
@@ -93,12 +104,15 @@
         
         <div>
           <input 
+          id="email"
           class="form-control mb-2"  
           type="email" 
-          formControlName="mail"
+          formControlName="email"
+        
           name="email"
           placeholder="Email"
-          required="required">
+          required="required"
+          >
 
           <div *ngIf="Mail?.errors && Mail?.touched">
             <p *ngIf="Mail?.hasError('required')" class="text-danger">
@@ -112,19 +126,22 @@
   
         <div>
           <input 
+          id="password1"
           class="form-control mb-2" 
-          type="text"
-          formControlName="Usuario"
-          name="Usuario"
-          placeholder="Nuevo Usuario"
-          required="required">
+          type="password"
+          formControlName="password1"
+         
+          name="password1"
+          placeholder="Nuevo password1"
+          required="required"
+          >
       
-        <div *ngIf="Usuario?.errors && Usuario?.touched">
-          <p *ngIf="Usuario?.hasError('required')" class="text-danger">
-            El eUsuario es requerido
+        <div *ngIf="Password1?.errors && Password1?.touched">
+          <p *ngIf="Password1?.hasError('required')" class="text-danger">
+            El password es requerido
           </p>
-          <p *ngIf="Usuario?.hasError('minlength')" class="text-danger">
-            El Usuario debe tener al menos 8 caracteres
+          <p *ngIf="Password1?.hasError('minlength')" class="text-danger">
+            El password debe tener al menos 8 caracteres
           </p>
         </div>
 
@@ -134,20 +151,22 @@
         
         <div>
           <input 
+          id="password2"
           class="form-control mb-2"  
           type="password"
-          formControlName="password"
-          name="password"
-          placeholder="Password"
+          formControlName="password2"
+          name="password2"
+          placeholder="password2"
           required="required"
+          
         />
 
-          <div *ngIf="Password?.errors && Password?.touched">
-            <p *ngIf="Password?.hasError('required')" class="text-danger">
-              El Password es requerido
+          <div *ngIf="Password2?.errors && Password2?.touched">
+            <p *ngIf="Password2?.hasError('required')" class="text-danger">
+              El password es requerido
             </p>
-            <p *ngIf="Password?.hasError('minlength')" class="text-danger">
-              El formato del Password debe ser válido
+            <p *ngIf="Password2?.hasError('minlength')" class="text-danger">
+              El formato del password debe ser válido
             </p>
           </div>
         </div>
@@ -155,7 +174,7 @@
 
 
         <div>
-          <button type="submit" class="btn btn-primary botonRegistrarse">Registrarse</button>
+          <button type="submit"   class="btn btn-primary botonRegistrarse">Enviar</button>
         </div>
   
         
