@@ -42,8 +42,8 @@ private baseUrl: string = "http://localhost:8000/";
       text: 'Se ha registrado con éxito',
       confirmButtonText: 'ir al Login'
     }).then(
-        function(){console.log("ok")}//{window.location.href = '/auth/login';
-    // }
+        function(){window.location.href = '/auth/login';
+     }
     )
 
 
@@ -74,7 +74,7 @@ private baseUrl: string = "http://localhost:8000/";
         localStorage.setItem('token', 'Bearer '+resp.token)
         localStorage.setItem('username', resp.username)
         localStorage.setItem('role', resp.role )
-        localStorage.setItem('id', resp.id.toString())
+        // localStorage.setItem('id', resp.id.toString())
         Swal.fire({
           icon: 'success',
           title: 'Ingreso Exitoso',
@@ -82,7 +82,7 @@ private baseUrl: string = "http://localhost:8000/";
           confirmButtonText: 'ir al Dashboard'
         }).then(
 
-          function() {window.location.href = '/dashboard';
+          function() {window.location.href = '/perfil';
         }
         )
 
