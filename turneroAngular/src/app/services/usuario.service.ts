@@ -18,7 +18,7 @@ export class Usuario
 })
 export class UsuarioService {
 
-  url="https://reqres.in/api/users/1";
+  url="http://127.0.0.1:8000/auth/registro/";
 
   constructor(private http:HttpClient) {
     console.log("Servicio Usuarios está corriendo");

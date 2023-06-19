@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth/login/login.component';
+import { LoginComponent } from './auth/componentes/login/login.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
-import { RegistroComponent } from './auth/registro/registro.component';
+import { RegistroComponent } from './auth/componentes/registro/registro.component';
 import { EspecialistasComponent } from './dashboard/especialistas/especialistas.component';
 import { EspecialidadesComponent } from './dashboard/especialidades/especialidades.component';
 

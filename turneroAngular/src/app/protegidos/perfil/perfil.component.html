@@ -1,0 +1,91 @@
+<div>
+    <br>
+    <form  (ngSubmit)="perfilActualizar(id)" autocomplete="off" [formGroup]="actualizarPerfil">
+    <div class="grid p-fluid">
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Nombre</span>
+                <input type="text" pInputText [(ngModel)]="usuario.nombre" formControlName="nombre">         
+            </div>
+        </div>
+        
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup"> 
+                <span class="p-inputgroup-addon">Apellido</span>
+                <input type="text" pInputText [(ngModel)]="usuario.apellido" formControlName="apellido">   
+             
+            </div>
+        </div>
+                
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Fecha Nacimiento</span>
+                <input type="date" class="form-control" [value]="usuario.fechaNacimiento" formControlName="fechaNac">     
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid p-fluid">
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Tipo de Usuario</span>
+                <input type="text" pInputText [value]="rol.authority" [disabled]="true" formControlName="role">         
+            </div>
+        </div>
+    
+       
+    
+        
+            <div class="col-12 md:col-4">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon">Email</span>
+                    <input type="email" pInputText [disabled]="true" [value]="email">         
+                </div>
+            </div>
+
+</div>
+<br>
+
+<button label="Guardar Cambios" *ngIf="rol.authority!='ADMINISTRADOR'" type="submit" icon="pi pi-check" iconPos="left"></button>
+<small *ngIf="rol.authority=='ADMINISTRADOR'">Los cambios en cuentas Administrador solo pueden ser realizados desde el Backend.</small>
+<br>
+</form>
+<div>
+
+<br><br>
+<div>
+<small> Función a ser implementada a futuro. Disculpe las molestias </small>
+    <br>
+
+    <div class="grid p-fluid">
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Contraseña Actual</span>
+                <input type="password" disabled pInputText placeholder="Ingrese contraseña actual">         
+            </div>
+        </div>
+        
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup"> 
+                <span class="p-inputgroup-addon">Nueva Contraseña</span>
+                <input type="password" disabled pInputText placeholder="Ingrese nueva contraseña">   
+             
+            </div>
+        </div>
+                
+        <div class="col-12 md:col-4">
+            <div class="p-inputgroup"> 
+                <span class="p-inputgroup-addon">Repetir Contraseña</span>
+                <input type="password" disabled pInputText placeholder="Repita su nueva contraseña">   
+             
+            </div>
+        </div>
+    
+    </div>
+<br>
+<div class="izquierdo">
+    <button  [disabled]="true" label="Cambiar Contraseña" (disabled)="true" icon="pi pi-check" iconPos="left"></button>
+    </div>
+    <br>
+
+<div>
