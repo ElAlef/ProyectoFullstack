@@ -1,0 +1,192 @@
+
+
+<body class="fondo">
+
+    <p class="ParrafoVolver">Volver al <a routerLink="#" class="linkVolver"><b>Inicio</b></a></p>
+  
+    <div class="container">
+      <h1 class="titulo">Registrarse</h1>
+      <!-- <button class="nav-boton" onclick="accion()">MENU</button>
+      <a href="#" class="nav-enlace desaparece">Inicio</a> -->
+      <p></p>
+      <p></p>
+      <form   [formGroup]="form" class="custom-form"  (ngSubmit)="registro()">
+
+        <div>
+          <input 
+          id="nombre"
+          class="form-control mb-2"  
+          type="text" 
+          formControlName="nombre"
+          
+          name="nombre"
+          placeholder="Nombre"
+          required="required"
+          >
+
+          <div *ngIf="Nombre?.errors && Nombre?.touched">
+            <p *ngIf="Nombre?.hasError('required')" class="text-danger">
+              El Nombre es requerido
+            </p>
+            <p *ngIf="Nombre?.hasError('minlength')" class="text-danger">
+              El Nombre debe tener al menos 8 caracteres
+            </p>
+          </div>
+        </div>
+        
+        <div>
+          <input 
+          id="apellido"
+          class="form-control mb-2"  
+          type="text" 
+          formControlName="apellido"
+         
+          name="apellido"
+          placeholder="Apellidos"
+          required="required"
+          >
+
+          <div *ngIf="Apellido?.errors && Apellido?.touched">
+            <p *ngIf="Apellido?.hasError('required')" class="text-danger">
+              El Apellido es requerido
+            </p>
+            <p *ngIf="Apellido?.hasError('minlength')" class="text-danger">
+              El Apellido debe tener al menos 8 caracteres
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <input 
+          id="dni"
+          class="form-control mb-2"  
+          type="text" 
+          formControlName="dni"
+         
+          name="dni"
+          placeholder="DNI"
+          required="required"
+          >
+
+          <div *ngIf="Dni?.errors && Dni?.touched">
+            <p *ngIf="Dni?.hasError('required')" class="text-danger">
+              El Dni es requerido
+            </p>
+            <p *ngIf="Dni?.hasError('minlength')" class="text-danger">
+              El Dni debe tener al menos 8 digitos
+            </p>
+          </div>
+        </div>
+  
+        <div>
+          <input 
+          id="fecha_nacimiento"
+          class="form-control mb-2"  
+          type="date" 
+          formControlName="fechaNacimiento"
+        
+          name="fechaNacimiento"
+          placeholder="fechaNacimiento"
+          required="required"
+          >
+
+          <div *ngIf="FechaNacimiento?.errors && FechaNacimiento?.touched">
+            <p *ngIf="FechaNacimiento?.hasError('required')" class="text-danger">
+              El fechaNacimiento es requerido
+            </p>
+            <p *ngIf="FechaNacimiento?.hasError('minlength')" class="text-danger">
+              El fechaNacimiento debe tener al menos 8 digitos
+            </p>
+          </div>
+        </div>
+
+        
+        
+        <div>
+          <input 
+          id="email"
+          class="form-control mb-2"  
+          type="email" 
+          formControlName="email"
+        
+          name="email"
+          placeholder="Email"
+          required="required"
+          >
+
+          <div *ngIf="Mail?.errors && Mail?.touched">
+            <p *ngIf="Mail?.hasError('required')" class="text-danger">
+              El email es requerido
+            </p>
+            <p *ngIf="Mail?.hasError('email')" class="text-danger">
+              El formato del email debe ser válido
+            </p>
+          </div>
+        </div>
+  
+        <div>
+          <input 
+          id="password1"
+          class="form-control mb-2" 
+          type="password"
+          formControlName="password1"
+         
+          name="password1"
+          placeholder="Nuevo password1"
+          required="required"
+          >
+      
+        <div *ngIf="Password1?.errors && Password1?.touched">
+          <p *ngIf="Password1?.hasError('required')" class="text-danger">
+            El password es requerido
+          </p>
+          <p *ngIf="Password1?.hasError('minlength')" class="text-danger">
+            El password debe tener al menos 8 caracteres
+          </p>
+        </div>
+
+        
+
+        </div>
+        
+        <div>
+          <input 
+          id="password2"
+          class="form-control mb-2"  
+          type="password"
+          formControlName="password2"
+          name="password2"
+          placeholder="password2"
+          required="required"
+          
+        />
+
+          <div *ngIf="Password2?.errors && Password2?.touched">
+            <p *ngIf="Password2?.hasError('required')" class="text-danger">
+              El password es requerido
+            </p>
+            <p *ngIf="Password2?.hasError('minlength')" class="text-danger">
+              El formato del password debe ser válido
+            </p>
+          </div>
+        </div>
+
+
+
+        <div>
+          <button type="submit"   class="btn btn-primary botonRegistrarse">Enviar</button>
+        </div>
+  
+        
+      
+  
+      <p class="ParrafoPieRegistro"> <small>Al registrate aceptas nuestras condiciones de uso y
+          políticas de privacidad</small> </p>
+      <p class="ParrafoPieRegistro">¿Ya tiene cuenta? <a routerLink="../login" class=" linkPieRegistro"><b>Iniciar
+            sesión</b></a></p>
+  
+      <div class="alert alert-success my-2 d-none" id="Alertsuccess"></div>
+    </form>
+    </div>
+  
+  </body>
