@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Alejandro\Desktop\TURNERO\ProyectoFullstack\backend2023\TurneroWeb
+set VIRTUAL_ENV=C:\Users\Alejandro\Desktop\ispc\ProyectoFullstack\backend2023\TurneroWeb
 
 if not defined PROMPT set PROMPT=$P$G
 

@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Alejandro\Desktop\TURNERO\ProyectoFullstack\backend2023\TurneroWeb"
+VIRTUAL_ENV="C:\Users\Alejandro\Desktop\ispc\ProyectoFullstack\backend2023\TurneroWeb"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
