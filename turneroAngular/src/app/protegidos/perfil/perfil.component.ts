@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Rol } from 'src/app/auth/interfaces/rol';
 import { AuthService } from 'src/app/auth/services/auth.service';
-import { DateValidator } from 'src/app/auth/validator/date.validator';
+ import { DateValidator } from 'src/app/auth/validator/date.validator';
+
 
 import Swal from 'sweetalert2';
 import { Users } from 'src/app/auth/interfaces/users';

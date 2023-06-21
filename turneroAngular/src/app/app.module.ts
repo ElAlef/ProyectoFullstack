@@ -6,15 +6,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
-import { AuthModule } from './auth/auth.module';
 import { HttpClientModule} from '@angular/common/http';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { PerfilComponent } from './protegidos/perfil/perfil.component';
+import { AuthModule } from './auth/auth.module';
+import { ProtegidosModule } from './protegidos/protegidos.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PerfilComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -24,8 +26,9 @@ import { PerfilComponent } from './protegidos/perfil/perfil.component';
     FormsModule,
     SharedModule,
     PagesModule,
-    AuthModule,
     DashboardModule,
+    AuthModule,
+    ProtegidosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
