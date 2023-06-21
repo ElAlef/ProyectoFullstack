@@ -12,6 +12,10 @@ from django.contrib.auth.hashers import make_password
 
 class UserSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(required=True)
+    nombre = serializers.CharField()
+    apellido = serializers.CharField()
+    fechaNacimiento = serializers.CharField()
+    dni = serializers.CharField()
     username = serializers.CharField(required=True)
     password = serializers.CharField(min_length=8)
     
