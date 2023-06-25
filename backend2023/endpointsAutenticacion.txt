@@ -1,0 +1,7 @@
+logout http://127.0.0.1:8000/api-auth/logout/
+registro http://127.0.0.1:8000/auth/registro/
+login http://127.0.0.1:8000/api-auth/login/
+perfil http://127.0.0.1:8000/user/profile/
+admin http://127.0.0.1:8000/admin/
+acceso a usuarios desde admin http://127.0.0.1:8000/api/v1/
+luego click en link http://127.0.0.1:8000/api/v1/users/ para ver lista de usuarios
