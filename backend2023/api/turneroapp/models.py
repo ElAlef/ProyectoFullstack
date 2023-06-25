@@ -1,7 +1,16 @@
 from django.db import models
 from datetime import datetime
 from django.contrib.auth.models import AbstractUser
+from django.conf import settings
+from django.dispatch import receiver
+from django.db.models.signals import post_save
+from rest_framework.authtoken.models import Token
 # # Create your models here.
+
+@receiver(post_save, sender=settings.AUTH_USER_MODEL)
+def create_auth_token(sender, instance=None, created=False, **kwargs):
+    if created:
+        Token.objects.create(user=instance)
 
 class CustomUser(AbstractUser):
     email = models.EmailField(max_length=150, unique=True)
@@ -11,6 +20,8 @@ class CustomUser(AbstractUser):
     dni = models.CharField(max_length=40, blank=False)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username', 'password']
+    def __str__(self):
+        return self.username
 
 class Especialidad(models.Model):
     id_Especialidad = models.AutoField(primary_key=True)

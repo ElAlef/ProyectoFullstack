@@ -9,6 +9,7 @@ from .models import turnosPorEspecialista
 from .models import Paciente
 from .models import ReservaDeTurno
 from .models import Pago
+from .models import CustomUser
 
 class UserSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(required=True)
@@ -17,15 +18,16 @@ class UserSerializer(serializers.ModelSerializer):
     fechaNacimiento = serializers.CharField()
     dni = serializers.CharField()
     username = serializers.CharField(
-        required=True)
+         required=True)
     password = serializers.CharField(
-        min_length=8, required=True)
+       min_length=8, required=True)
 
     class Meta:
-        model = get_user_model()
+        model = CustomUser
         fields = ('email', 'nombre', 'apellido', 'fechaNacimiento', 'dni', 'username', 'password')
+        read_only_fields = ('username', )
     def validate_password(self, value):
-        return make_password(value)
+         return make_password(value)
 
 class EspecialidadSerializer(serializers.ModelSerializer):
 
