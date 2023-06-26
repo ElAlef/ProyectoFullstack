@@ -25,6 +25,9 @@ export class AuthService {
    logout(){
     localStorage.clear();
    }
+   estalogueado(){
+    return this.logIn
+   }
   
    
 }
