@@ -22,6 +22,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { TokenInterceptor } from "./token.interceptor";
 import { MatCardModule } from "@angular/material/card";
+import { TurnosComponent } from './turnos/turnos.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { MatCardModule } from "@angular/material/card";
     AppComponent,
     UserLoginComponent,
     UserProfileComponent,
+    TurnosComponent,
     
   ],
   imports: [
