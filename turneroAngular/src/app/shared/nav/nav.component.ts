@@ -18,6 +18,7 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
 
   }
+ 
   logout(){
     this.authService.logout();
     this.router.navigate(['/servicios']);
