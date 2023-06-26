@@ -88,10 +88,11 @@ class ListarUsuarios(generics.ListCreateAPIView):
         if self.request.user.is_authenticated:
             return Response(serializer.data)
 
-class verEspecialidad(APIView):
-    permission_classes = [AllowAny]
+class verEspecialidad(generics.ListCreateAPIView):
+    permission_classes = (IsUserOrReadOnly,AllowAny)
     queryset = Especialidad.objects.all()
     serializer_class = EspecialidadSerializer
+    http_method_names = ['get']
 
 class agregarEspecialidad(APIView):
     permission_classes = [IsAdminUser]
