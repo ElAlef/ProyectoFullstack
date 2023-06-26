@@ -1,0 +1,20 @@
+<div class="login-form-container">
+    <h2 class="titulo">Iniciar Sesion</h2>
+    <form [formGroup]="logInForm" (ngSubmit)="onSubmit(logInForm.value)">
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input matInput formControlName="username">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password">
+        </mat-form-field>
+      </p>
+      <p>
+        <button mat-flat-button color="primary" type="submit" cdkFocusInitial>LOGÍN</button>
+      </p>
+    </form>
+   </div>

@@ -1,0 +1,12 @@
+.login-form-container {
+    margin-left: 412px;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+  }
+  .boton{
+    background: lightblue;
+  }
+  .titulo{
+    font-size: 2rem;
+    font-weight: bold;
+  }

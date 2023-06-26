@@ -1,27 +1,21 @@
-import { CommonModule } from '@angular/common';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { EspecialistasComponent } from './dashboard/especialistas/especialistas.component';
 import { EspecialidadesComponent } from './dashboard/especialidades/especialidades.component';
-import { ValidarTokenGuard } from './guards/validar-token.guard';
+import { UserLoginComponent } from "./user-login/user-login.component";
+import { UserProfileComponent } from "./user-profile/user-profile.component";
+import { AuthGuard } from "./auth.guard";
 
 
 
 const routes: Routes = [
-  {
-    path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
- },
- {
-  path: 'dashboard',
-  loadChildren: () => import('./protegidos/protegidos.module').then(m => m.ProtegidosModule),
-  canActivate: [
-   ValidarTokenGuard
-  ]
+  { path: 'login', component: UserLoginComponent },
+  { path: 'user-profile/:id', component: UserProfileComponent, canActivate: [AuthGuard] },
     
-},
+
 
   { path: '', redirectTo: '/servicios', pathMatch: 'full'},
   { path: "servicios", component: ServiciosComponent },
@@ -32,7 +26,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [CommonModule,RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
