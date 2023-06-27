@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class NavComponentComponent implements OnInit {
+export class NavComponent implements OnInit {
   userLoginOn:boolean=false;
   constructor() { }
 
