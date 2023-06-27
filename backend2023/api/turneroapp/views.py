@@ -5,26 +5,49 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .serializers import *
 from rest_framework.permissions import IsAdminUser, AllowAny, IsAuthenticated
-from .models import CustomUser
 from rest_framework import viewsets
-# Create your views here.
+from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.authtoken.models import Token
+from .models import CustomUser
+from .permissions import IsUserOrReadOnly
+from .serializers import UserSerializer
 
-class LoginView(APIView):
-    permission_classes = [AllowAny] 
-    def post(self, request):
-        # Recuperamos las credenciales y autenticamos al usuario
-        email = request.data.get('email', None)
-        password = request.data.get('password', None)
-        user = authenticate(email=email, password=password)
-        # Si es correcto añadimos a la request la información de sesión
-        if user:
-            login(request, user)
-            return Response(
-                UserSerializer(user).data,
-                status=status.HTTP_200_OK)
-        # Si no es correcto devolvemos un error en la petición
-        return Response(
-            status=status.HTTP_404_NOT_FOUND)
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = CustomUser.objects.all()
+    serializer_class = UserSerializer
+    permission_classes = (IsUserOrReadOnly, IsAuthenticated)
+
+
+class UserLogIn(ObtainAuthToken):
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.serializer_class(data=request.data,
+                                           context={'request': request})
+        serializer.is_valid(raise_exception=True)
+        user = serializer.validated_data['user']
+        token = Token.objects.get(user=user)
+        return Response({
+            'token': token.key,
+            'id': user.pk,
+            'username': user.username
+        })
+# class LoginView(APIView):
+#     permission_classes = [AllowAny] 
+#     def post(self, request):
+#         # Recuperamos las credenciales y autenticamos al usuario
+#         email = request.data.get('email', None)
+#         password = request.data.get('password', None)
+#         user = authenticate(email=email, password=password)
+#         # Si es correcto añadimos a la request la información de sesión
+#         if user:
+#             login(request, user)
+#             return Response(
+#                 UserSerializer(user).data,
+#                 status=status.HTTP_200_OK)
+#         # Si no es correcto devolvemos un error en la petición
+#         return Response(
+#             status=status.HTTP_404_NOT_FOUND)
 
 
 class LogoutView(APIView):
@@ -65,10 +88,11 @@ class ListarUsuarios(generics.ListCreateAPIView):
         if self.request.user.is_authenticated:
             return Response(serializer.data)
 
-class verEspecialidad(APIView):
-    permission_classes = [AllowAny]
+class verEspecialidad(generics.ListCreateAPIView):
+    permission_classes = (IsUserOrReadOnly,AllowAny)
     queryset = Especialidad.objects.all()
     serializer_class = EspecialidadSerializer
+    http_method_names = ['get']
 
 class agregarEspecialidad(APIView):
     permission_classes = [IsAdminUser]

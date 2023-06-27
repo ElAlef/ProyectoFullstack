@@ -6,23 +6,21 @@
       <p class="navbar-brand mb-2">Turnero Web</p>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li *ngIf="estaAutenticado" class="nav-item">
-            <a class="nav-link" routerLink="/home"  aria-current="page">HOME</a>
-          </li>
+          
           <li  class="nav-item">
             <a class="nav-link"  routerLink="/servicios"  aria-current="page">INICIO</a>
           </li>
           <li  class="nav-item">
             <a class="nav-link"  routerLink="../Contactos"  aria-current="page">CONTÁCTO</a>
           </li>
-          <li *ngIf="!userLoginOn" class="nav-item">
+          <li  class="nav-item">
             <a class="nav-link" routerLink="../registro"  aria-current="page">REGISTRARSE</a>
           </li>
-          <li *ngIf="!userLoginOn" class="nav-item">
-            <a class="nav-link" routerLink="../login"  aria-current="page">INICIAR SESIÓN</a>
+          <li *ngIf="!userLoginOn" class="nav-item" >
+            <a  class="nav-link" routerLink="../login"  aria-current="page" >INICIAR SESIÓN</a>
           </li>
-          <li *ngIf="userLoginOn" class="nav-item">
-            <a class="nav-link"   aria-current="page">CERRAR SESIÓN</a>
+          <li *ngIf="!userLoginOn" class="nav-item" >
+            <a  class="nav-link" routerLink="../servicios"  aria-current="page" (click)="logout()" >CERRAR SESIÓN</a>
           </li>
         </ul>
       </div>

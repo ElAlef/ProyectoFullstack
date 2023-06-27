@@ -6,10 +6,12 @@ from .models import Especialidad
 from .models import Paciente
 from .models import ReservaDeTurno
 from .models import Pago
-from django.contrib.auth import get_user_model
-from django.contrib.auth.admin import UserAdmin
+# from django.contrib.auth import get_user_model
+# from django.contrib.auth.admin import UserAdmin
+# from .models import CustomUser
 from .models import CustomUser
 
+admin.site.register(CustomUser)
 # Register your models here.
 
 class EspecialidadAdmin(admin.ModelAdmin):
@@ -28,9 +30,9 @@ class ReservaDeTurnoAdmin(admin.ModelAdmin):
 class PagoAdmin(admin.ModelAdmin):
     list_display = ('monto','fecha','hora','id_Reserva')
 
-@admin.register(get_user_model())
-class CustomUserAdmin(UserAdmin):
-    pass
+# @admin.register(get_user_model())
+# class CustomUserAdmin(UserAdmin):
+#     pass
 
 # admin.site.register(CustomUser, CustomUserAdmin)
 admin.site.register(Especialidad, EspecialidadAdmin)

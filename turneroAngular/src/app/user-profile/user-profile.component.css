@@ -1,0 +1,22 @@
+.profile-heading {
+    margin: 20px;
+    font-weight: bold;
+  }
+ 
+  .profile-card {
+    max-width: 800px;
+    margin: 20px;
+    margin-top: 2rem;
+    margin-bottom: 12rem;
+    padding: 6rem;
+    background: lightblue;
+  }
+  .titulo{
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+  .campos{
+    font-size: 1.25rem;
+    color: gray;
+    margin: 1rem;
+  }

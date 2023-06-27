@@ -18,4 +18,5 @@ export class ValidarTokenGuard implements CanActivate, CanLoad {
     return this.authService.validarToken()
   
   }
+
 }
