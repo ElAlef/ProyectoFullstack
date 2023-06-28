@@ -5,8 +5,7 @@ import { FormBuilder,FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
-import { User } from 'src/app/services/auth/user';
-import { Users } from '../../interfaces/users';
+
 
 @Component({
   selector: 'app-registro',

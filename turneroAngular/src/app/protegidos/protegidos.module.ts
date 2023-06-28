@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PerfilComponent } from './perfil/perfil.component';
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ProtegidosRoutingModule } from './protegidos-routing.module';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+
+import { TurnosComponent } from './pages/turnos/turnos.component';
+import { MatCardModule } from "@angular/material/card";
+
 
 
 
@@ -13,15 +15,16 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-    PerfilComponent,
-    DashboardComponent],
+    UserProfileComponent, TurnosComponent],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ProtegidosRoutingModule
+    MatCardModule,
     
-  ]
+    
+  ],
+  exports: [TurnosComponent],
 
 })
 export class ProtegidosModule { }
