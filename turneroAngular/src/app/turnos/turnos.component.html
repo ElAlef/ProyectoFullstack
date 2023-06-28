@@ -1,0 +1,58 @@
+<h1> Saca tu Turno</h1>
+
+<select class="form-select" aria-label="Default select example">
+    <option selected>Elige la Especilidad</option>
+    <option value="1">Odontología Dr.José Hernandez</option>
+    <option value="2">Clinica medica Dr.Juan Justo</option>
+    <option value="3">Otorrinolaringología Dr/a.Alfonsina Storni</option>
+  </select>
+<div>
+    <h3>Elige una Fecha</h3>
+    <input type="date">
+</div>
+
+<div >
+    <h3>Elige una hora</h3>
+    
+    <input type="time">
+</div>
+
+<div>
+    <h3>Solicita tu turno Aquí</h3>
+    <button>Solicitar turno</button>
+</div>
+
+<div class="container">
+    <div class="especilidades">
+        <ul *ngFor="let turnos of especialidades, let i =index">
+            <li>
+                {{turnos.nombre}}
+            </li>
+        </ul> 
+    </div>
+    
+    <div class="especilistas">
+        <ul *ngFor="let turnos of especialistas" >
+                
+            <li>
+             {{turnos.nombre}}
+             </li>
+                    
+        </ul>
+    </div>
+        
+        <div class="horarioAtencion">
+            <ul *ngFor="let turnos of horarioDeAtencion" >
+        
+                <li>{{turnos.dia_de_la_semana}}</li>
+                <li>{{turnos.hora_inici}}</li>
+                <li>{{turnos.hora_fi}}</li>
+                              
+                </ul>
+        </div>
+</div>
+
+    
+
+
+

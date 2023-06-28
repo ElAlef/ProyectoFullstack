@@ -103,3 +103,15 @@ class agregarEspecialidad(APIView):
             return Response(serializer.data,
                         status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class verEspecialista(generics.ListCreateAPIView):
+    permission_classes = (IsUserOrReadOnly,AllowAny)
+    queryset = Especialista.objects.all()
+    serializer_class = EspecialistaSerializer
+    http_method_names = ['get']
+
+class verHorarioDeAtencion(generics.ListCreateAPIView):
+    permission_classes = (IsUserOrReadOnly,AllowAny)
+    queryset = HorarioDeAtencion.objects.all()
+    serializer_class = HorarioDeAtencionSerializer
+    http_method_names = ['get']

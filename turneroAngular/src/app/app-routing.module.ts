@@ -8,13 +8,14 @@ import { EspecialidadesComponent } from './dashboard/especialidades/especialidad
 import { UserLoginComponent } from "./user-login/user-login.component";
 import { UserProfileComponent } from "./user-profile/user-profile.component";
 import { AuthGuard } from "./auth.guard";
+import { TurnosComponent } from './turnos/turnos.component';
 
 
 
 const routes: Routes = [
   { path: 'login', component: UserLoginComponent },
   { path: 'user-profile/:id', component: UserProfileComponent, canActivate: [AuthGuard] },
-    
+  { path: 'turnos', component: TurnosComponent,canActivate: [AuthGuard] },  
 
 
   { path: '', redirectTo: '/servicios', pathMatch: 'full'},
