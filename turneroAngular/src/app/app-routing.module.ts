@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
-import { EspecialistasComponent } from './dashboard/especialistas/especialistas.component';
-import { EspecialidadesComponent } from './dashboard/especialidades/especialidades.component';
-import { UserLoginComponent } from "./user-login/user-login.component";
-import { UserProfileComponent } from "./user-profile/user-profile.component";
-import { AuthGuard } from "./auth.guard";
-import { TurnosComponent } from './turnos/turnos.component';
+
+import { UserLoginComponent } from "./login/user-login/user-login.component";
+import { UserProfileComponent } from "./protegidos/pages/user-profile/user-profile.component";
+import { AuthGuard } from './login/auth.guard';
+import { TurnosComponent } from './protegidos/pages/turnos/turnos.component';
+import { ProtegidosModule } from './protegidos/protegidos.module';
 
 
 
@@ -21,13 +21,12 @@ const routes: Routes = [
   { path: '', redirectTo: '/servicios', pathMatch: 'full'},
   { path: "servicios", component: ServiciosComponent },
   { path: "Contactos", component: ContactosComponent},
-  { path: "especialistas",component:EspecialistasComponent},
-  { path: "especialidades",component:EspecialidadesComponent}
+ 
   
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule,ProtegidosModule]
 })
 export class AppRoutingModule { }
