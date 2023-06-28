@@ -10,7 +10,7 @@ import { turnos } from '../turnos';
 })
 export class TurnosComponent implements OnInit {
   hoy= new Date ();
-  mostrarEspecialidades: boolean=true;
+  mostrarEspecialidades:turnos[]=[];
   especialidades:any;
   mostrarEspecialistas: boolean=true;
   especialistas:any;

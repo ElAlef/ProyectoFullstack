@@ -9,19 +9,10 @@ import { AuthService } from 'src/app/auth.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
- 
-  
+  userLoginOn:boolean=false;
+  constructor() { }
 
-  constructor(private authService: AuthService,private router:Router) { }
-  
-
-  ngOnInit(): void {
-
-  }
- 
-  logout(){
-    this.authService.logout();
-    this.router.navigate(['/servicios']);
+  ngOnInit() {
   }
 
 }

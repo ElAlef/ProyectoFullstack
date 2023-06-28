@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> E-commerce_Desarrollo
 import { FormControl, ValidationErrors } from '@angular/forms';
 import Swal from 'sweetalert2';
 
