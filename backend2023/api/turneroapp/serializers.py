@@ -5,7 +5,7 @@ from django.contrib.auth.hashers import make_password
 from .models import Especialidad
 from .models import Especialista
 from .models import HorarioDeAtencion
-from .models import turnosPorEspecialista
+from .models import TurnosPorEspecialista
 from .models import Paciente
 from .models import ReservaDeTurno
 from .models import Pago
@@ -37,19 +37,22 @@ class EspecialidadSerializer(serializers.ModelSerializer):
         # fields=('nombre')
 
 class EspecialistaSerializer(serializers.ModelSerializer):
+    id_Especialidad = EspecialidadSerializer()
     class Meta:
         model= Especialista
         fields='__all__'
         # fields=('nombre')
 
 class HorarioDeAtencionSerializer(serializers.ModelSerializer):
+    id_Especialista = EspecialistaSerializer()
     class Meta:
         model= HorarioDeAtencion
         fields='__all__'
 
-class turnosPorEspecialistaSerializer(serializers.ModelSerializer):
+class TurnosPorEspecialistaSerializer(serializers.ModelSerializer):
+    id_Horario = HorarioDeAtencionSerializer()
     class Meta:
-        model= turnosPorEspecialista
+        model= TurnosPorEspecialista
         fields='__all__' 
 
 class PacienteSerializer(serializers.ModelSerializer):
