@@ -93,6 +93,7 @@ class verEspecialidad(generics.ListCreateAPIView):
     queryset = Especialidad.objects.all()
     serializer_class = EspecialidadSerializer
     http_method_names = ['get']
+    
 
 class agregarEspecialidad(APIView):
     permission_classes = [IsAdminUser]
@@ -109,9 +110,16 @@ class verEspecialista(generics.ListCreateAPIView):
     queryset = Especialista.objects.all()
     serializer_class = EspecialistaSerializer
     http_method_names = ['get']
+   
 
 class verHorarioDeAtencion(generics.ListCreateAPIView):
     permission_classes = (IsUserOrReadOnly,AllowAny)
     queryset = HorarioDeAtencion.objects.all()
     serializer_class = HorarioDeAtencionSerializer
+    http_method_names = ['get']
+
+class verTurnosPorEspecialista(generics.ListCreateAPIView):  
+    serializer_class = TurnosPorEspecialistaSerializer() 
+    permission_classes = (IsUserOrReadOnly,AllowAny)
+    queryset = TurnosPorEspecialista.objects.all() 
     http_method_names = ['get']
