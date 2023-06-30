@@ -1,5 +1,19 @@
 .container{
     display: flex;
     flex-wrap: nowrap;
+    padding: 1rem 1rem;
+    border: solid 1px ;
+    margin-bottom: 5rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+ul {
+    list-style: none;
+}
+li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 

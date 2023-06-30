@@ -119,7 +119,7 @@ class verHorarioDeAtencion(generics.ListCreateAPIView):
     http_method_names = ['get']
 
 class verTurnosPorEspecialista(generics.ListCreateAPIView):  
-    serializer_class = TurnosPorEspecialistaSerializer() 
+    serializer_class = TurnosPorEspecialistaSerializer 
     permission_classes = (IsUserOrReadOnly,AllowAny)
     queryset = TurnosPorEspecialista.objects.all() 
     http_method_names = ['get']

@@ -53,7 +53,7 @@ h1 {
 .ng-invalid:not(form).ng-touched {
   border-left: 5px solid #a94442;
 }
-=======
+
 body {
   background: #ecf0f3;
 }
@@ -107,8 +107,8 @@ h1 {
 .ng-invalid:not(form).ng-touched {
   border-left: 5px solid #a94442;
 }
->>>>>>> 6a29085301ef9f24c73e273b1eb208ebbf53f671
-=======
+
+
 body {
   background: #ecf0f3;
 }
@@ -162,4 +162,3 @@ h1 {
 .ng-invalid:not(form).ng-touched {
   border-left: 5px solid #a94442;
 }
->>>>>>> E-commerce_Desarrollo
