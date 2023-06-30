@@ -18,10 +18,14 @@
     )
 )
 
+<<<<<<< HEAD
+set VIRTUAL_ENV=C:\Users\Asus\Desktop\ProyectoFullStack2023\ProyectoFullstack\backend2023\TurneroWeb
+=======
 @REM Don't use () to avoid problems with them in %PATH%
 @if defined _OLD_VIRTUAL_PYTHONHOME @goto ENDIFVHOME
     @set "_OLD_VIRTUAL_PYTHONHOME=%PYTHONHOME%"
 :ENDIFVHOME
+>>>>>>> c0a4120cfd873d05c05e8f3c7afe104f5e02149a
 
 @set PYTHONHOME=
 
