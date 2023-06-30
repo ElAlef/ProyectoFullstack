@@ -9,11 +9,14 @@ export class TurnosService {
   
   constructor(private http: HttpClient) {}
     
-  ObtenerEspecialidades(): Observable <any>
+  ObtenerTurnos(): Observable <any>
   {
-    return this.http.get("http://127.0.0.1:8000/especialidades/");
+    return this.http.get("http://127.0.0.1:8000/Turnos/");
+    
   }
-  ObtenerEspecialistas(): Observable <any>
+  
+}
+/*  ObtenerEspecialistas(): Observable <any>
   {
     return this.http.get("http://127.0.0.1:8000/especialistas/");
   }
@@ -24,7 +27,7 @@ export class TurnosService {
     
    }
 
- /* getTurnos(userId: string|null): Observable<any> {
+  getTurnos(userId: string|null): Observable<any> {
     return this.http.get(`http://127.0.0.1:8000/especialidades/`);
   }*/
   

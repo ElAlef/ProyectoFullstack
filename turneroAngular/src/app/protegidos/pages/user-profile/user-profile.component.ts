@@ -3,6 +3,7 @@ import { ActivatedRoute } from "@angular/router";
 import { UserProfileService } from '../../user-profile.service';
 import { UserProfile } from '../../interfaces/user-profile';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-user-profile',
@@ -28,6 +29,15 @@ userProfile: UserProfile|null = null;
     );
   }
   onSubmit(){
+    Swal.fire({
+      title: 'Estas por solicitar un turno Médico',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
     this.router.navigateByUrl(`/turnos`)
   }
 }

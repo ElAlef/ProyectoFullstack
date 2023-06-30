@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { TurnosService } from '../../turnos.service';
 import { turnos } from '../../interfaces/turnos';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-turnos',
@@ -14,21 +15,39 @@ export class TurnosComponent implements OnInit {
   especialidades:any;
   mostrarEspecialistas: boolean=true;
   especialistas:any;
-  mostrarhorarioDeAtencion: boolean=true;
-  horarioDeAtencion:any;
+  mostrarTurnos: boolean=true;
+  Turnos:turnos[]=[];
+  router: any;
  
 
 constructor(private turnosService: TurnosService, private activatedRoute: ActivatedRoute) { 
-  this.turnosService.ObtenerEspecialidades().subscribe({
-    next: (data) =>{
-      this.especialidades=data
-    },
-    error: (error) =>{
-      console.error(error);
-    }
-  });
+  }
+  ngOnInit(): void {
+    this.turnosService.ObtenerTurnos().subscribe({
+      next: (data) =>{
+        this.Turnos=data
+      },
+      error: (error) =>{
+        console.error(error);
+      }
+    });
+  }
 
-  this.turnosService.ObtenerEspecialistas().subscribe({
+  confirmarTurno(){
+   
+    Swal.fire({
+      title: 'Te derivamos al pago de tu consulta... !Gracias!',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
+  }
+ 
+}
+ /* this.turnosService.ObtenerEspecialistas().subscribe({
     next: (data) =>{
       this.especialistas=data
     },
@@ -63,4 +82,4 @@ ngOnInit(): void{
       }
     }
   );*/
-}
+
