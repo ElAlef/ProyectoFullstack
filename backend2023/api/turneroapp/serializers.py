@@ -61,9 +61,12 @@ class PacienteSerializer(serializers.ModelSerializer):
         fields='__all__'
 
 class RevervaDeTurnoSerializer(serializers.ModelSerializer):
+    # email = UserSerializer()
+    # id_Turnos = TurnosPorEspecialistaSerializer()
     class Meta:
         model= ReservaDeTurno
         fields='__all__'
+       
 
 class PagoSerializer(serializers.ModelSerializer):
     class Meta:
