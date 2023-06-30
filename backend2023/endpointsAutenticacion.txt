@@ -5,3 +5,21 @@ perfil http://127.0.0.1:8000/user/profile/
 admin http://127.0.0.1:8000/admin/
 acceso a usuarios desde admin http://127.0.0.1:8000/api/v1/
 luego click en link http://127.0.0.1:8000/api/v1/users/ para ver lista de usuarios
+
+para reservar turno definir post con los siguientes datos a enviar
+ {
+        "email": "1",
+        "id_Turnos": "2"
+    }
+
+    a url http://127.0.0.1:8000/ReservarTurno/
+
+para pagar turno reservado
+ {
+        "id_pago": 2,
+        "monto": 100,
+        "fecha": "2023-06-28",
+        "hora": "16:16:42",
+        "id_Reserva": 5
+    }
+ a url http://127.0.0.1:8000/Pagar/

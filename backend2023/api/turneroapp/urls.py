@@ -1,6 +1,6 @@
 from django import urls
 from django.urls import path, include, re_path
-from .views import  LogoutView, SignupView, ProfileView, ListarUsuarios, agregarEspecialidad, verEspecialidad, verEspecialista, verHorarioDeAtencion, verTurnosPorEspecialista
+from .views import  LogoutView, SignupView, ProfileView, ListarUsuarios, agregarEspecialidad, verEspecialidad, verEspecialista, verHorarioDeAtencion, verTurnosPorEspecialista, reservarTurno,verReservaDeTurno, pago, verPago
 
 urlpatterns = [
 #     path('auth/login/',
@@ -27,4 +27,12 @@ urlpatterns = [
          verHorarioDeAtencion.as_view(), name='ver_HorariosDeAtencion'),
     path('Turnos/',
          verTurnosPorEspecialista.as_view(), name='ver_TurnosPorEspecialista'),
+    path('ReservarTurno/',
+         reservarTurno.as_view(), name='ver_reservarTurno'),
+    path('VerReservaDeTurno/',
+         verReservaDeTurno.as_view(), name='ver_reservaDeTurno'),
+    path('Pagar/',
+         pago.as_view(), name='pago'),
+    path('verPago/',
+         verPago.as_view(), name='ver_pago'),
 ]

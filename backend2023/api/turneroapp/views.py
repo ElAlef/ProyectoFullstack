@@ -119,7 +119,46 @@ class verHorarioDeAtencion(generics.ListCreateAPIView):
     http_method_names = ['get']
 
 class verTurnosPorEspecialista(generics.ListCreateAPIView):  
-    serializer_class = TurnosPorEspecialistaSerializer() 
-    permission_classes = (IsUserOrReadOnly,AllowAny)
+    permission_classes = (IsUserOrReadOnly,AllowAny) 
     queryset = TurnosPorEspecialista.objects.all() 
+    serializer_class = TurnosPorEspecialistaSerializer
     http_method_names = ['get']
+
+
+class verReservaDeTurno(generics.ListCreateAPIView):  
+    permission_classes = (IsUserOrReadOnly,AllowAny) 
+    queryset = ReservaDeTurno.objects.all() 
+    serializer_class = RevervaDeTurnoSerializer
+    http_method_names = ['get']
+
+
+class reservarTurno(APIView):
+    permission_classes = [IsAuthenticated]
+    def post(self, request, format=None):
+         serializer = RevervaDeTurnoSerializer(data=request.data)
+         if serializer.is_valid():
+             serializer.save()
+             return Response(serializer.data,
+                         status=status.HTTP_201_CREATED)
+         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+class pago(APIView):
+    permission_classes = [IsAuthenticated]
+    def post(self, request, format=None):
+         serializer = PagoSerializer(data=request.data)
+         if serializer.is_valid():
+             serializer.save()
+             return Response(serializer.data,
+                         status=status.HTTP_201_CREATED)
+         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+class verPago(generics.ListCreateAPIView):  
+    permission_classes = [IsAuthenticated] 
+    queryset = Pago.objects.all() 
+    serializer_class = PagoSerializer
+    http_method_names = ['get']
+
+
+
+
+    
