@@ -5,8 +5,7 @@ import { FormBuilder,FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
-import { User } from 'src/app/services/auth/user';
-import { Users } from '../../interfaces/users';
+
 
 @Component({
   selector: 'app-registro',
@@ -21,7 +20,7 @@ export class RegistroComponent implements OnInit {
 
 
   constructor(private formBuilder: FormBuilder, private authService: AuthService,
-    private datePipe: DatePipe, private router:Router) {
+    private router:Router) {
   
     this.form = this.formBuilder.group(
       {
@@ -58,6 +57,7 @@ export class RegistroComponent implements OnInit {
                 title: 'Registrando el usuario',
                 html: 'Porfavor, espere. Le indicaremos cuando hayamos finalizado. ',
                 didOpen: () => {
+                  
                   Swal.showLoading()
                 }
               })
@@ -76,7 +76,7 @@ export class RegistroComponent implements OnInit {
             console.log(this.form.value)
           
             this.authService.registro(apellido,email,fechaNacimiento,dni,nombre,password1)
-          
+            
           }
           repitaPassword() {
           

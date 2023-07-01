@@ -1,0 +1,15 @@
+<div *ngIf="userProfile">
+    <h1 class="profile-heading">Perfil de Usuario</h1>
+    <mat-card class="profile-card">
+      <mat-card-header>
+        <mat-card-title class="titulo">{{ userProfile.nombre }} {{ userProfile.apellido }}</mat-card-title>
+        <mat-card-subtitle class="campos">E-mail : {{ userProfile.username }}</mat-card-subtitle>
+        <mat-card-subtitle class="campos">DNI : {{ userProfile.dni }}</mat-card-subtitle>
+        <mat-card-subtitle class="campos">Fecha de Nacimiento : {{ userProfile.fechaNacimiento }}</mat-card-subtitle>   
+     </mat-card-header>
+     
+
+    </mat-card>
+    
+    </div>
+    <button type="button" class="btn btn-primary"><a routerLink="/turnos" (click)="onSubmit()">Saca Tu Turno</a></button>

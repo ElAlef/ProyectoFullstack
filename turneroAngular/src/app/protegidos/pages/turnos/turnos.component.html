@@ -1,0 +1,23 @@
+
+
+
+        <div class="horarioAtencion" class="container">
+            <ul *ngFor="let turno of Turnos" >
+                <li>Dr/a: {{turno.id_Horario.id_Especialista.nombre}}</li>
+                <li>Especialidad: {{turno.id_Horario.id_Especialista.id_Especialidad.nombre}}</li>
+                <li>Día de Atención: {{turno.id_Horario.dia_de_la_semana}}</li>
+                <li>Desde: {{turno.id_Horario.hora_inici}}</li>
+                
+                 
+                <button type="button" class="btn btn-outline-success" routerlink="#" (click)="confirmarTurno()" >Solicitar Turno</button>
+                </ul>
+                
+        </div>
+       
+        
+
+        
+    
+
+
+
