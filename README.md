@@ -1,17 +1,3 @@
-# Turnero Web / E-Commerce
-
-## The purpose of this repository is to develop a web page that has as an application destination the field of health and will be proposed as a shift for a medical institution.
-
-### This Site will serve for user self-management, from this page you can:
-
-- Register as a user or institution.
-- Book shift by specialty.
-- Suggest availability of days and times by specialist.
-- Provide personalized reminders.
-- Pay for the requested services.
-
-### It will also allow the web page administrator to keep an orderly control of their services and patients.
-
 # Turnero Web - E-Commerce
 
 ## La finalidad de este repositorio es desarrollar una pagina web que tiene como destino de aplicación el ámbito de la salud y será planteada como un turnero para institución médica.
@@ -25,3 +11,36 @@
 - Abonar los servicios solicitados.
 
 ### Además le permitira al administrador de la página web llevar un control ordenado de sus servicios y pacientes.
+#
+## Para cargar Django correctamente, desde la consola
+ 
+### posicionarse en la carpeta backend: cd backend2023
+- crear el entorno virtual: python -m venv TurneroWeb 
+- activar el EV: TurneroWeb\Scripts\activate
+- VERIFICAR QUE ENTORNO VIRTUAL ESTA ACTIVADO:
+   (TurneroWeb) 
+
+- instalar django: python -m pip install Django
+- actualizar pip (si es necesario):python.exe -m pip install --upgrade pip
+- instalar las librerias necesarias: 
+  pip install mysqlclient
+	pip install djangorestframework
+	pip install django-cors-headers
+	pip install django_rest_passwordreset
+
+## ABRIR XAMP Y CREAR BASE DE DATOS TURNERO
+ 
+### Posicionarse en la carpeta API: cd api
+
+- python manage.py createsuperuser
+- python manage.py makemigrations
+- python manage.py migrate
+- python manage.py runserver
+
+## PASOS PARA HACER CORRER EL PROYECTO EN ANGULAR
+
+Para cargar Angular correctamente, desde la consola
+ 
+### posicionarse en la carpeta turneroAngular: cd urneroAngular
+- instalar sweetalert2: npm i sweetalert2
+- correr el servidor: npm start
