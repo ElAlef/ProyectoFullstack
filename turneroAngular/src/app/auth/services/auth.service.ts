@@ -41,7 +41,7 @@ private baseUrl: string = "http://localhost:8000/";
       text: 'Se ha registrado con éxito',
       confirmButtonText: 'ir al Login'
     }).then(
-        function(){window.location.href = '/auth/login';
+        function(){window.location.href = '/login';
      }
     )
 

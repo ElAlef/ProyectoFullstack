@@ -16,7 +16,7 @@ para reservar turno definir post con los siguientes datos a enviar
 
 para pagar turno reservado
  {
-        "id_pago": 2,
+       
         "monto": 100,
         "fecha": "2023-06-28",
         "hora": "16:16:42",
