@@ -20,5 +20,16 @@ export interface turnos{
         horarioDeInicio: number,
         horarioDeFin: number,
     }
-    
+    export interface reservarTurno  {
+        email: string,
+        id_Turnos: number,
+
+    }
+
+    export interface pagarReserva  {
+        monto: number,
+        fecha: number,
+        hora: number,
+        id_Reserva: number,
+    }
 

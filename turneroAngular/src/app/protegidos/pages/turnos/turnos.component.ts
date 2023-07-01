@@ -3,6 +3,8 @@ import { ActivatedRoute } from "@angular/router";
 import { TurnosService } from '../../turnos.service';
 import { turnos } from '../../interfaces/turnos';
 import Swal from 'sweetalert2';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-turnos',
@@ -18,9 +20,12 @@ export class TurnosComponent implements OnInit {
   mostrarTurnos: boolean=true;
   Turnos:turnos[]=[];
   router: any;
+  
  
 
-constructor(private turnosService: TurnosService, private activatedRoute: ActivatedRoute) { 
+constructor(private turnosService: TurnosService,
+   private activatedRoute: ActivatedRoute,
+   ) { 
   }
   ngOnInit(): void {
     this.turnosService.ObtenerTurnos().subscribe({
@@ -31,6 +36,8 @@ constructor(private turnosService: TurnosService, private activatedRoute: Activa
         console.error(error);
       }
     });
+
+    
   }
 
   confirmarTurno(){
@@ -44,9 +51,11 @@ constructor(private turnosService: TurnosService, private activatedRoute: Activa
         popup: 'animate__animated animate__fadeOutUp'
       }
     })
+   
+  }
   }
  
-}
+
  /* this.turnosService.ObtenerEspecialistas().subscribe({
     next: (data) =>{
       this.especialistas=data
